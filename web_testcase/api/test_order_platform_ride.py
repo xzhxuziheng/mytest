@@ -37,4 +37,4 @@ class TestOrderPlatformRide:
         res = RequestsUtil.session.request(method=method, url=url, headers=header, params=data)
         print(res.json())
         print('git test')
-
+        print('git add')
