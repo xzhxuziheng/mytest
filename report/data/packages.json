@@ -1,0 +1,115 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcase.test_product",
+    "children" : [ {
+      "name" : "test_01_product",
+      "uid" : "7f18906a9ac2643a",
+      "parentUid" : "f868b3c8353a98f640d4063c9d328846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649846204086,
+        "stop" : 1649846204086,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_02_product",
+      "uid" : "902ff6396e3c014a",
+      "parentUid" : "f868b3c8353a98f640d4063c9d328846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649846204088,
+        "stop" : 1649846204088,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_03_product",
+      "uid" : "3ad3f9c5f51ea074",
+      "parentUid" : "f868b3c8353a98f640d4063c9d328846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649846204089,
+        "stop" : 1649846204089,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_04_product",
+      "uid" : "396757460eb513ab",
+      "parentUid" : "f868b3c8353a98f640d4063c9d328846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649846204090,
+        "stop" : 1649846204090,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "testcase.test_product"
+  }, {
+    "name" : "web_testcase.api.test_login",
+    "children" : [ {
+      "name" : "test_login[caseinfo0]",
+      "uid" : "17c019efc9e94f77",
+      "parentUid" : "4c00d631bad3cac4a3688a1fe8373454",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649846204092,
+        "stop" : 1649846204387,
+        "duration" : 295
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "{'name': '登录接口001', 'url': 'https://test.bike.ledear.cn/api/account/platform/account/login', 'method': 'get', 'header': {'content-type': 'application/json', 'source_type': '3'}, 'data': {'phone': 18408229871, 'code': 930619}}" ]
+    }, {
+      "name" : "test_login[caseinfo1]",
+      "uid" : "e163d5800db855ab",
+      "parentUid" : "4c00d631bad3cac4a3688a1fe8373454",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649846204389,
+        "stop" : 1649846204445,
+        "duration" : 56
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "{'name': '登录接口002', 'url': 'https://test.bike.ledear.cn/api/account/platform/account/login', 'method': 'get', 'header': {'content-type': 'application/json', 'source_type': '3'}, 'data': {'phone': '', 'code': 930619}}" ]
+    } ],
+    "uid" : "web_testcase.api.test_login"
+  } ]
+}

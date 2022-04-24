@@ -1,0 +1,115 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "xuzihengdeMacBook-Pro.local",
+    "children" : [ {
+      "name" : "48263-MainThread",
+      "children" : [ {
+        "name" : "test_01_product",
+        "uid" : "7f18906a9ac2643a",
+        "parentUid" : "19ae49b856ee4385637ec8bf04008a04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649846204086,
+          "stop" : 1649846204086,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_03_product",
+        "uid" : "3ad3f9c5f51ea074",
+        "parentUid" : "19ae49b856ee4385637ec8bf04008a04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649846204089,
+          "stop" : 1649846204089,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_04_product",
+        "uid" : "396757460eb513ab",
+        "parentUid" : "19ae49b856ee4385637ec8bf04008a04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649846204090,
+          "stop" : 1649846204090,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login[caseinfo1]",
+        "uid" : "e163d5800db855ab",
+        "parentUid" : "19ae49b856ee4385637ec8bf04008a04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649846204389,
+          "stop" : 1649846204445,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '登录接口002', 'url': 'https://test.bike.ledear.cn/api/account/platform/account/login', 'method': 'get', 'header': {'content-type': 'application/json', 'source_type': '3'}, 'data': {'phone': '', 'code': 930619}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "17c019efc9e94f77",
+        "parentUid" : "19ae49b856ee4385637ec8bf04008a04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649846204092,
+          "stop" : 1649846204387,
+          "duration" : 295
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '登录接口001', 'url': 'https://test.bike.ledear.cn/api/account/platform/account/login', 'method': 'get', 'header': {'content-type': 'application/json', 'source_type': '3'}, 'data': {'phone': 18408229871, 'code': 930619}}" ]
+      }, {
+        "name" : "test_02_product",
+        "uid" : "902ff6396e3c014a",
+        "parentUid" : "19ae49b856ee4385637ec8bf04008a04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649846204088,
+          "stop" : 1649846204088,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "19ae49b856ee4385637ec8bf04008a04"
+    } ],
+    "uid" : "5c31c666616d773b53d4d415499774d0"
+  } ]
+}

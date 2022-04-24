@@ -1,0 +1,11 @@
+-
+  name: 获取骑行订单列表${name}
+  url: https://test.bike.ledear.cn/api/order/platform/ride/list
+  method: get
+  header:
+    content-type: application/json
+    source_type: '3'
+    area_id: '10'
+  data:
+    page: ${page}
+    pageSize: ${pagesize}

@@ -1,0 +1,131 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "test_product",
+      "children" : [ {
+        "name" : "TestProduct",
+        "children" : [ {
+          "name" : "test_01_product",
+          "uid" : "7f18906a9ac2643a",
+          "parentUid" : "a519b7f88e0d98d6b5de78f9332de183",
+          "status" : "passed",
+          "time" : {
+            "start" : 1649846204086,
+            "stop" : 1649846204086,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_02_product",
+          "uid" : "902ff6396e3c014a",
+          "parentUid" : "a519b7f88e0d98d6b5de78f9332de183",
+          "status" : "passed",
+          "time" : {
+            "start" : 1649846204088,
+            "stop" : 1649846204088,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_03_product",
+          "uid" : "3ad3f9c5f51ea074",
+          "parentUid" : "a519b7f88e0d98d6b5de78f9332de183",
+          "status" : "passed",
+          "time" : {
+            "start" : 1649846204089,
+            "stop" : 1649846204089,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_04_product",
+          "uid" : "396757460eb513ab",
+          "parentUid" : "a519b7f88e0d98d6b5de78f9332de183",
+          "status" : "passed",
+          "time" : {
+            "start" : 1649846204090,
+            "stop" : 1649846204090,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a519b7f88e0d98d6b5de78f9332de183"
+      } ],
+      "uid" : "8cf525a849c4c4ccf5b765a42fcba145"
+    } ],
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+  }, {
+    "name" : "web_testcase.api",
+    "children" : [ {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "test_login[caseinfo0]",
+          "uid" : "17c019efc9e94f77",
+          "parentUid" : "5734123b69826768d5838167e004b4a7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1649846204092,
+            "stop" : 1649846204387,
+            "duration" : 295
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'name': '登录接口001', 'url': 'https://test.bike.ledear.cn/api/account/platform/account/login', 'method': 'get', 'header': {'content-type': 'application/json', 'source_type': '3'}, 'data': {'phone': 18408229871, 'code': 930619}}" ]
+        }, {
+          "name" : "test_login[caseinfo1]",
+          "uid" : "e163d5800db855ab",
+          "parentUid" : "5734123b69826768d5838167e004b4a7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1649846204389,
+            "stop" : 1649846204445,
+            "duration" : 56
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'name': '登录接口002', 'url': 'https://test.bike.ledear.cn/api/account/platform/account/login', 'method': 'get', 'header': {'content-type': 'application/json', 'source_type': '3'}, 'data': {'phone': '', 'code': 930619}}" ]
+        } ],
+        "uid" : "5734123b69826768d5838167e004b4a7"
+      } ],
+      "uid" : "093d9bc1bc38e95e830eb2cb8f454f07"
+    } ],
+    "uid" : "74ef64fe1c7253c28d5bbc6aa145dd99"
+  } ]
+}
