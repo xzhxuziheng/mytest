@@ -1,5 +1,5 @@
 -
-  name: 获取骑行订单列表${name}
+  name: 获取骑行订单列表
   url: https://test.bike.ledear.cn/api/order/platform/ride/list
   method: get
   header:
@@ -7,5 +7,5 @@
     source_type: '3'
     area_id: '10'
   data:
-    page: ${page}
-    pageSize: ${pagesize}
+    page: 1
+    pageSize: 10
