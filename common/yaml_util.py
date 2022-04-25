@@ -31,8 +31,8 @@ def clean_yaml(yaml_file_path):
 def csvReplaceYaml(yaml_file_path, new_yaml_file_path, csv_path):
     try:
         with ExitStack() as stack:
-            yaml_file = stack.enter_context(open(get_file_path()+yaml_file_path, 'r+'))
-            yaml_output = stack.enter_context(open(get_file_path()+new_yaml_file_path, 'w'))
+            yaml_file = stack.enter_context(open(get_file_path()+yaml_file_path, 'r+', encoding='utf-8'))
+            yaml_output = stack.enter_context(open(get_file_path()+new_yaml_file_path, 'w', encoding='utf-8'))
             # 先读取YAML模板文件，返回值为字符串列表
             yml_file_lines = yaml_file.readlines()
             profileList = csv_util.fromCsvToJson(csv_path)
