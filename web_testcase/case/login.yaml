@@ -1,10 +1,7 @@
 -
   name: 登录接口
-  url: https://test.bike.ledear.cn/api/account/platform/account/login
+  url: /api/account/platform/account/login
   method: get
-  header:
-    content-type: application/json
-    source_type: '3'
   data:
     phone: 18408229871
     code: 930619

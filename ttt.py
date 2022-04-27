@@ -1,5 +1,7 @@
-d1 = {'a': 1}
-d2 = {'b': 2}
-d1.update(d2)
-print(d1)
-print(type(d1))
+# def func():
+#     yield 'test yield'
+#
+# print(func().__next__())
+from common import common_util
+
+print((common_util.CommonUtil.login_header))

@@ -1,5 +1,13 @@
+from common import yaml_util
+
+
 class CommonUtil:
-    pass
+
+    data = yaml_util.read_yaml('/requestOfGlobal.yaml')
+    domain = data['domain']
+    header = data['header']
+    login_header = data['login_header']
+
     # def setup_class(self):
     #     print('每个类之前执行一次')
     #

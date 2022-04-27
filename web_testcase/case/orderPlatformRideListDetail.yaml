@@ -1,6 +1,6 @@
 -
   name: 获取骑行订单列表详情
-  url: https://test.bike.ledear.cn/api/order/platform/ride/detail
+  url: /api/order/platform/ride/detail
   method: get
   header:
     content-type: application/json

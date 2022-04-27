@@ -1,6 +1,6 @@
 -
-  name: 获取骑行订单列表页码传1，页大小15
-  url: https://test.bike.ledear.cn/api/order/platform/ride/list
+  name: 获取骑行订单列表
+  url: /api/order/platform/ride/list
   method: get
   header:
     content-type: application/json
@@ -8,5 +8,5 @@
     area_id: '10'
   data:
     page: 1
-    pageSize: 15
+    pageSize: 10
 
