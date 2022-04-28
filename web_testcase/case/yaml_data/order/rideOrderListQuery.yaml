@@ -1,8 +1,7 @@
 -
-  name: 获取骑行订单列表
+  name: 查询骑行订单列表
   url: /api/order/platform/ride/list
   method: get
   data:
     page: 1
     pageSize: 10
-

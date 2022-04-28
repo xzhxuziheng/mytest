@@ -18,15 +18,17 @@ class TestOrderPlatformRide:
         method = caseinfo['method']
         header = TestOrderPlatformRide.header
         token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}
+        print(token)
         header.update(token)
+        print(header)
         data = caseinfo['data']
         print('测试接口：%s' % name)
         res = RequestsUtil.session.request(method=method, url=url, headers=header, params=data)
-        try:
-            yaml_data = {'orderRideId': res.json()['data']['list'][0]['id']}
-            yaml_util.write_yaml('/web_testcase/case/dependCase.yaml', yaml_data)
-        except:
-            print('获取失败')
+        # try:
+        #     yaml_data = {'orderRideId': res.json()['data']['list'][0]['id']}
+        #     yaml_util.write_yaml('/web_testcase/case/dependCase.yaml', yaml_data)
+        # except:
+        #     print('获取失败')
 
     #获取骑行订单详情
     @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/orderPlatformRideListDetail.yaml'))
@@ -34,7 +36,7 @@ class TestOrderPlatformRide:
         name = caseinfo['name']
         url = TestOrderPlatformRide.domain+caseinfo['url']
         method = caseinfo['method']
-        header = caseinfo['header']
+        header = TestOrderPlatformRide.header
         token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}
         header.update(token)
         data = {'orderRideId': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['orderRideId']}

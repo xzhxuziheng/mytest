@@ -1,0 +1,6 @@
+-
+  name: 获取骑行订单详情1
+  url: /api/order/platform/ride/list-position
+  method: get
+  data:
+    orderRideId: 1

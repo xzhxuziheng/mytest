@@ -4,12 +4,12 @@ from common import yaml_util
 from common.requests_util import RequestsUtil
 
 
+@pytest.mark.run(order=1)
 class TestLogin(CommonUtil):
 
     domain = CommonUtil.domain
     login_header = CommonUtil.login_header
 
-    @pytest.mark.run(order=1)
     @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/login.yaml'))
     def test_login(self, caseinfo):
         name = caseinfo['name']

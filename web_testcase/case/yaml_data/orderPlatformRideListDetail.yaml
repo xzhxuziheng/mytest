@@ -2,10 +2,6 @@
   name: 获取骑行订单列表页码
   url: /api/order/platform/ride/list/detail
   method: get
-  header:
-    content-type: application/json
-    source_type: '3'
-    area_id: '10'
   data:
     page: 1
     pageSize: 15
