@@ -6,7 +6,7 @@ from common.common_util import CommonUtil
 
 class TestOrderPlatformRide:
 
-    domain = CommonUtil.domain
+    base_url = CommonUtil.base_url
     header = CommonUtil.header
     # 获取骑行订单列表
     @pytest.mark.parametrize('caseinfo', yaml_util.read_new_yaml('/web_testcase/case/orderPlatformRideList.yaml',
@@ -14,7 +14,7 @@ class TestOrderPlatformRide:
                                                                  '/web_testcase/case/csv_data/orderPlatformRideList.csv'))
     def test_get_order_platform_ride_list(self, caseinfo):
         name = caseinfo['name']
-        url = TestOrderPlatformRide.domain+caseinfo['url']
+        url = TestOrderPlatformRide.base_url+caseinfo['url']
         method = caseinfo['method']
         header = TestOrderPlatformRide.header
         token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}
@@ -34,7 +34,7 @@ class TestOrderPlatformRide:
     @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/orderPlatformRideListDetail.yaml'))
     def test_get_order_platform_ride_list_detail(self, caseinfo):
         name = caseinfo['name']
-        url = TestOrderPlatformRide.domain+caseinfo['url']
+        url = TestOrderPlatformRide.base_url+caseinfo['url']
         method = caseinfo['method']
         header = TestOrderPlatformRide.header
         token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}

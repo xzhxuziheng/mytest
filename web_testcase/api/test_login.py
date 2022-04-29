@@ -7,13 +7,13 @@ from common.requests_util import RequestsUtil
 @pytest.mark.run(order=1)
 class TestLogin(CommonUtil):
 
-    domain = CommonUtil.domain
+    base_url = CommonUtil.base_url
     login_header = CommonUtil.login_header
 
     @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/login.yaml'))
     def test_login(self, caseinfo):
         name = caseinfo['name']
-        url = TestLogin.domain+caseinfo['url']
+        url = TestLogin.base_url+caseinfo['url']
         method = caseinfo['method']
         header = TestLogin.login_header
         data = caseinfo['data']

@@ -6,19 +6,19 @@ from common.common_util import CommonUtil
 
 class TestOrder:
 
-    domain = CommonUtil.domain
+    base_url = CommonUtil.base_url
     header = CommonUtil.header
+    # token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}
 
     # 获取骑行订单列表
     @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/yaml_data/order/rideOrderList.yaml'))
     def test_ride_order_list(self, caseinfo):
         name = caseinfo['name']
-        url = TestOrder.domain+caseinfo['url']
+        url = TestOrder.base_url+caseinfo['url']
         method = caseinfo['method']
         header = TestOrder.header
         token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}
         header.update(token)
-        print(header)
         data = caseinfo['data']
         print('测试接口：%s' % name)
         res = requests_util.RequestsUtil.session.request(method=method, url=url, headers=header, params=data)
@@ -42,7 +42,7 @@ class TestOrder:
     @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/yaml_data/order/rideOrderListQuery.yaml'))
     def test_ride_order_list_query(self, caseinfo):
         name = caseinfo['name']
-        url = TestOrder.domain + caseinfo['url']
+        url = TestOrder.base_url + caseinfo['url']
         method = caseinfo['method']
         header = TestOrder.header
         token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}
@@ -67,7 +67,7 @@ class TestOrder:
     @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/yaml_data/order/rideOrderInfo.yaml'))
     def test_ride_order_info(self, caseinfo):
         name = caseinfo['name']
-        url = TestOrder.domain+caseinfo['url']
+        url = TestOrder.base_url+caseinfo['url']
         method = caseinfo['method']
         header = TestOrder.header
         token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}
@@ -80,7 +80,7 @@ class TestOrder:
     @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/yaml_data/order/rideOrderDetail.yaml'))
     def test_ride_order_detail(self, caseinfo):
         name = caseinfo['name']
-        url = TestOrder.domain+caseinfo['url']
+        url = TestOrder.base_url+caseinfo['url']
         method = caseinfo['method']
         header = TestOrder.header
         token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}

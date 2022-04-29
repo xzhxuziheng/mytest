@@ -1,4 +1,4 @@
-domain: https://test.bike.ledear.cn
+base_url: https://test.bike.ledear.cn
 header:
   content-type: application/json
   source_type: '3'
