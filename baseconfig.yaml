@@ -6,3 +6,5 @@ header:
 login_header:
   content-type: application/json
   source_type: '3'
+log_level: DEBUG
+handler_log_log_level: DEBUG

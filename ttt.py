@@ -2,6 +2,7 @@
 #     yield 'test yield'
 #
 # print(func().__next__())
-from common import common_util
+import os
 
-print((common_util.CommonUtil.login_header))
+path = os.path.dirname(__file__)
+print(path)

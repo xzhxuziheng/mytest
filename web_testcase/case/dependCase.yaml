@@ -1,8 +1,9 @@
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.bnTir_xH_BSNwnlHNqmgwhR7g_YbrPAbPdyCoS6yUuo
-bikeNo: '10200324'
-endTime: '2022-04-29 10:43:35'
-orderNo: '4122042910432974701525'
-orderRideId: 10063
-startTime: '2022-04-29 10:43:29'
-state: 2
-userPhone: '19180930619'
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.YPZtLaR8-djE2CTfENwkPHVxkkYGMYMBvSJtCKo9Gy0
+rideOrder:
+  bikeNo: '10200324'
+  endTime: '2022-04-30 16:38:41'
+  orderNo: '4122043016352126731525'
+  orderRideId: 10076
+  startTime: '2022-04-30 16:35:21'
+  state: 2
+  userPhone: '19180930619'

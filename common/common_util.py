@@ -3,7 +3,7 @@ from common import yaml_util
 
 class CommonUtil:
 
-    data = yaml_util.read_yaml('/requestOfGlobal.yaml')
+    data = yaml_util.read_yaml('/baseconfig.yaml')
     base_url = data['base_url']
     header = data['header']
     login_header = data['login_header']
