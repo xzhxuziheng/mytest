@@ -60,9 +60,10 @@ def read_new_yaml(yaml_file_path, new_yaml_file_path, csv_path):
 
 
 if __name__ == '__main__':
-    yaml_file_path = '/web_testcase/case/orderPlatformRideList.yaml'
-    new_yaml_file_path = '/web_testcase/case/yaml_data/orderPlatformRideList.yaml'
-    csv_path = '/web_testcase/case/csv_data/orderPlatformRideList.csv'
-    test_yaml = '/web_testcase/case/dependCase.yaml'
-    print(read_yaml(test_yaml))
-    print(type(read_yaml(test_yaml)))
+    # yaml_file_path = '/web_testcase/case/orderPlatformRideListDetail.yaml'
+    yaml_file_path = '/web_testcase/case/login.yaml'
+    # new_yaml_file_path = '/web_testcase/case/yaml_data/orderPlatformRideList.yaml'
+    # csv_path = '/web_testcase/case/csv_data/orderPlatformRideList.csv'
+    # test_yaml = '/web_testcase/case/dependCase.yaml'
+    print(type(read_yaml(yaml_file_path)[0]['asserts']))
+    # print(type(read_yaml(test_yaml)))

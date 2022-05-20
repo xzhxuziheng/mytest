@@ -7,5 +7,5 @@
     pageSize: 15
   asserts: 成功
 
-
-
+-
+  depends: response_data['data']['list'][0]['id']

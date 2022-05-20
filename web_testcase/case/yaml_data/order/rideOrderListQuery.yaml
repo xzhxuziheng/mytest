@@ -5,3 +5,4 @@
   data:
     page: 1
     pageSize: 10
+  asserts: '成功'

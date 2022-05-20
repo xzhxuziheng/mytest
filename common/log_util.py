@@ -1,17 +1,17 @@
 import logging
 import os
 import time
-
 from common import yaml_util
 
 
 def create_file():
+    now_time = time.strftime("%Y-%m-%d", time.localtime(time.time()))
     log_dir = os.path.dirname(__file__).split('common')[0] + './logs/'
     if not os.path.exists(log_dir):
         os.mkdir(log_dir)
-    else:
-        pass
-    now_time = time.strftime("%Y-%m-%d", time.localtime(time.time()))
+    # else:
+    #     pass
+    # now_time = time.strftime("%Y-%m-%d", time.localtime(time.time()))
     log_file = log_dir + now_time + '.log'
     return log_file
 
@@ -44,8 +44,8 @@ class Log(object):
 
     def __set_formatter(self, stream_handler, file_handler):
         """设置日志输出格式"""
-        formatter = logging.Formatter('%(asctime)s-%(name)s-%(filename)s-[line:%(lineno)d]'
-                                      '-%(levelname)s-[日志信息]: %(message)s',
+        formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(name)s | %(filename)s'
+                                      ' | [line:%(lineno)d] : %(message)s',
                                       datefmt='%Y-%m-%d %H:%M:%S')
         stream_handler.setFormatter(formatter)
         file_handler.setFormatter(formatter)

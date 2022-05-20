@@ -4,3 +4,4 @@
   method: get
   data:
     orderRideId: 1
+  asserts: '成功'

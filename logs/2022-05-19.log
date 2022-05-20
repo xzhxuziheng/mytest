@@ -1,0 +1,48 @@
+2022-05-19 17:54:16 | INFO | web_testcase.api.test_login | test_login.py | [line:26] : 测试接口：登录接口
+2022-05-19 17:54:16 | WARNING | C:\xzh\project\mytest\common\assert_util.py | assert_util.py | [line:27] : 'message': '成功' 不包含于 {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.x2t2zPC2QBIMQxkumgkjOMLFt7235-HB5441xmW9Rmc'}
+2022-05-19 17:54:16 | INFO | web_testcase.api.test_login | test_login.py | [line:32] : https://test.bike.ledear.cn/api/account/platform/account/login?phone=18408229871&code=930619
+2022-05-19 17:54:16 | INFO | web_testcase.api.test_login | test_login.py | [line:33] : {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.x2t2zPC2QBIMQxkumgkjOMLFt7235-HB5441xmW9Rmc'}
+2022-05-19 17:54:16 | INFO | web_testcase.api.test_order | test_order.py | [line:69] : 获取数据失败
+2022-05-19 17:54:16 | INFO | web_testcase.api.test_order | test_order.py | [line:88] : 获取数据失败
+2022-05-19 17:54:16 | INFO | web_testcase.api.test_order | test_order.py | [line:89] : 测试接口：获取骑行订单详情1
+2022-05-19 17:54:16 | INFO | web_testcase.api.test_order | test_order.py | [line:105] : 获取数据失败
+2022-05-19 17:54:16 | INFO | web_testcase.api.test_order | test_order.py | [line:106] : 测试接口：获取骑行订单详情2
+2022-05-19 17:56:22 | INFO | web_testcase.api.test_login | test_login.py | [line:26] : 测试接口：登录接口
+2022-05-19 17:56:23 | WARNING | C:\xzh\project\mytest\common\assert_util.py | assert_util.py | [line:27] : 'message': '成功' 不包含于 {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.olnwleBVQhIfqcxVY8LbrCH4MMGwiDpdcp9MDDp00Qk'}
+2022-05-19 17:56:23 | INFO | web_testcase.api.test_login | test_login.py | [line:32] : https://test.bike.ledear.cn/api/account/platform/account/login?phone=18408229871&code=930619
+2022-05-19 17:56:23 | INFO | web_testcase.api.test_login | test_login.py | [line:33] : {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.olnwleBVQhIfqcxVY8LbrCH4MMGwiDpdcp9MDDp00Qk'}
+2022-05-19 17:56:23 | INFO | web_testcase.api.test_order | test_order.py | [line:69] : 获取数据失败
+2022-05-19 17:56:23 | INFO | web_testcase.api.test_order | test_order.py | [line:88] : 获取数据失败
+2022-05-19 17:56:23 | INFO | web_testcase.api.test_order | test_order.py | [line:89] : 测试接口：获取骑行订单详情1
+2022-05-19 17:56:23 | INFO | web_testcase.api.test_order | test_order.py | [line:105] : 获取数据失败
+2022-05-19 17:56:23 | INFO | web_testcase.api.test_order | test_order.py | [line:106] : 测试接口：获取骑行订单详情2
+2022-05-19 17:57:25 | INFO | web_testcase.api.test_login | test_login.py | [line:26] : 测试接口：登录接口
+2022-05-19 17:57:25 | WARNING | C:\xzh\project\mytest\common\assert_util.py | assert_util.py | [line:27] : 'message': '成功' 不包含于 {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.ba2hOcF2xIPoxsn23zX29u8ISdV0JFRy6_UKXzkuGFE'}
+2022-05-19 17:57:25 | INFO | web_testcase.api.test_login | test_login.py | [line:32] : https://test.bike.ledear.cn/api/account/platform/account/login?phone=18408229871&code=930619
+2022-05-19 17:57:25 | INFO | web_testcase.api.test_login | test_login.py | [line:33] : {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.ba2hOcF2xIPoxsn23zX29u8ISdV0JFRy6_UKXzkuGFE'}
+2022-05-19 17:57:25 | INFO | web_testcase.api.test_order | test_order.py | [line:69] : 获取数据失败
+2022-05-19 17:57:25 | INFO | web_testcase.api.test_order | test_order.py | [line:88] : 获取数据失败
+2022-05-19 17:57:25 | INFO | web_testcase.api.test_order | test_order.py | [line:89] : 测试接口：获取骑行订单详情1
+2022-05-19 17:57:25 | INFO | web_testcase.api.test_order | test_order.py | [line:105] : 获取数据失败
+2022-05-19 17:57:25 | INFO | web_testcase.api.test_order | test_order.py | [line:106] : 测试接口：获取骑行订单详情2
+2022-05-19 18:08:55 | INFO | web_testcase.api.test_login | test_login.py | [line:26] : 测试接口：登录接口
+2022-05-19 18:08:55 | WARNING | C:\xzh\project\mytest\common\assert_util.py | assert_util.py | [line:27] : 成功 不包含于 {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.vzGfffs3YZyj_qCTnIVs1ZQC_DH-psNtCzzqGgR0Geo'}
+2022-05-19 18:08:55 | INFO | web_testcase.api.test_login | test_login.py | [line:32] : https://test.bike.ledear.cn/api/account/platform/account/login?phone=18408229871&code=930619
+2022-05-19 18:08:55 | INFO | web_testcase.api.test_login | test_login.py | [line:33] : {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.vzGfffs3YZyj_qCTnIVs1ZQC_DH-psNtCzzqGgR0Geo'}
+2022-05-19 18:08:55 | INFO | web_testcase.api.test_order | test_order.py | [line:69] : 获取数据失败
+2022-05-19 18:08:55 | INFO | web_testcase.api.test_order | test_order.py | [line:88] : 获取数据失败
+2022-05-19 18:08:55 | INFO | web_testcase.api.test_order | test_order.py | [line:89] : 测试接口：获取骑行订单详情1
+2022-05-19 18:08:55 | INFO | web_testcase.api.test_order | test_order.py | [line:105] : 获取数据失败
+2022-05-19 18:08:55 | INFO | web_testcase.api.test_order | test_order.py | [line:106] : 测试接口：获取骑行订单详情2
+2022-05-19 18:11:58 | INFO | web_testcase.api.test_login | test_login.py | [line:26] : 测试接口：登录接口
+2022-05-19 18:11:58 | WARNING | C:\xzh\project\mytest\common\assert_util.py | assert_util.py | [line:27] : 成功 不包含于 {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.Y8h8-xEzqg6GE5xQS3dPwdoFMniouPFkOINlAEW_G1w'}
+2022-05-19 18:11:58 | INFO | web_testcase.api.test_login | test_login.py | [line:32] : https://test.bike.ledear.cn/api/account/platform/account/login?phone=18408229871&code=930619
+2022-05-19 18:11:58 | INFO | web_testcase.api.test_login | test_login.py | [line:33] : {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.Y8h8-xEzqg6GE5xQS3dPwdoFMniouPFkOINlAEW_G1w'}
+2022-05-19 18:11:58 | INFO | web_testcase.api.test_order | test_order.py | [line:69] : 获取数据失败
+2022-05-19 18:11:58 | INFO | web_testcase.api.test_order | test_order.py | [line:88] : 获取数据失败
+2022-05-19 18:11:58 | INFO | web_testcase.api.test_order | test_order.py | [line:89] : 测试接口：获取骑行订单详情1
+2022-05-19 18:11:58 | INFO | web_testcase.api.test_order | test_order.py | [line:105] : 获取数据失败
+2022-05-19 18:11:58 | INFO | web_testcase.api.test_order | test_order.py | [line:106] : 测试接口：获取骑行订单详情2
+2022-05-19 18:13:54 | INFO | web_testcase.api.test_login | test_login.py | [line:26] : 测试接口：登录接口
+2022-05-19 18:14:38 | INFO | web_testcase.api.test_login | test_login.py | [line:26] : 测试接口：登录接口
+2022-05-19 18:15:09 | INFO | web_testcase.api.test_login | test_login.py | [line:26] : 测试接口：登录接口

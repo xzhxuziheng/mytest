@@ -1,0 +1,9 @@
+-
+  name: ${name}
+  url: /api/order/platform/ride/list
+  method: get
+  data:
+    page: ${page}
+    pageSize: ${pagesize}
+  asserts: ${asserts}
+
