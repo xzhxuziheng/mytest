@@ -8,4 +8,4 @@
   asserts: 成功
 
 -
-  depends: response_data['data']['list'][0]['id']
+  depends: '['data']['list'][0]['id']'

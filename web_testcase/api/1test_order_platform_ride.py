@@ -11,7 +11,7 @@ class TestOrderPlatformRide:
     response_data = []
 
     # 获取骑行订单列表
-    @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/orderPlatformRideList.yaml'))
+    @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/yaml_data/order/rideOrderList.yaml'))
     def test_get_order_platform_ride_list(self, caseinfo):
         name = caseinfo['name']
         url = TestOrderPlatformRide.base_url+caseinfo['url']
@@ -33,8 +33,12 @@ class TestOrderPlatformRide:
         else:
             return response_data
 
-    def get_yaml_depend_data(self, depend_data):
-        yaml_file_path = '/xxx.yaml'
+    def get_yaml_depend_data(self):
+        yaml_file_path = '/web_testcase/case/mytest.yaml'
         depends = yaml_util.read_yaml(yaml_file_path)['depends']
+        print(TestOrderPlatformRide.response_data[depends])
+
+t = TestOrderPlatformRide()
+print(t.get_yaml_depend_data())
 
 
