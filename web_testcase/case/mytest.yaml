@@ -1,11 +1,8 @@
--
-  name: 页码传1，页大小15
-  url: /api/order/platform/ride/list
-  method: get
-  data:
-    page: 1
-    pageSize: 15
-  asserts: 成功
-
--
-  depends: '['data']['list'][0]['id']'
+name: 页码传1，页大小15
+url: /api/order/platform/ride/list
+method: get
+data:
+  page: 1
+  pageSize: 15
+asserts: 成功
+depends: 0.data.list.0.id

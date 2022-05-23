@@ -1,0 +1,20 @@
+-
+  name: 获取骑行订单列表
+  url: /api/order/platform/ride/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+-
+  name: 骑行订单列表查询
+  url: /api/order/platform/ride/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends:
+    - 0.data.list.0.orderNo
+#    - 0.data.list.0.bikeNo
+#    - 0.data.list.0.userPhone
