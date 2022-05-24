@@ -1,9 +1,1 @@
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.8Ap_cmLZzOtlD9WPXA4Jr5tQOqyC1-6ViY864nht8Yc
-rideOrder:
-  bikeNo: '1000991'
-  endTime: '2022-05-13 17:29:23'
-  orderNo: '4122051317291800491525'
-  orderRideId: 10149
-  startTime: '2022-05-13 17:29:18'
-  state: 4
-  userPhone: '19180930619'
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.ge9g8KfQdgkPpEegw0RID3M_qLk1pCqrf0Smu2eCOv8

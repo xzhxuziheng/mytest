@@ -5,7 +5,7 @@ class RequestsUtil:
 
     session = requests.session()
 
-    def send_request(self,method, url, data, **kwargs):
+    def send_request(self, method, url, data, **kwargs):
         method = str(method).lower()
         res = ''
         if method == 'get':

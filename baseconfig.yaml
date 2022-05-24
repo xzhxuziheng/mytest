@@ -8,3 +8,4 @@ login_header:
   source_type: '3'
 log_level: INFO
 handler_log_log_level: INFO
+all_api_yaml: /web_testcase/case/all_api.yaml

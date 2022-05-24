@@ -6,6 +6,7 @@
     page: 1
     pageSize: 10
   asserts: 成功
+  depends: n
 -
   name: 骑行订单列表查询
   url: /api/order/platform/ride/list
@@ -14,7 +15,12 @@
     page: 1
     pageSize: 10
   asserts: 成功
-  depends:
+  depends: y
+  depends_key:
+    - orderNo
+    - bikeNo
+    - userPhone
+  depends_value:
     - 0.data.list.0.orderNo
-#    - 0.data.list.0.bikeNo
-#    - 0.data.list.0.userPhone
+    - 0.data.list.0.bikeNo
+    - 0.data.list.0.userPhone

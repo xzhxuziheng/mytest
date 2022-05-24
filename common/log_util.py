@@ -9,9 +9,6 @@ def create_file():
     log_dir = os.path.dirname(__file__).split('common')[0] + './logs/'
     if not os.path.exists(log_dir):
         os.mkdir(log_dir)
-    # else:
-    #     pass
-    # now_time = time.strftime("%Y-%m-%d", time.localtime(time.time()))
     log_file = log_dir + now_time + '.log'
     return log_file
 
