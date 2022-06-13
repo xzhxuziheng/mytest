@@ -1,0 +1,84 @@
+- code: '00006'
+  message: 参数校验错误
+- code: '00000'
+  data:
+    list:
+    - bikeNum: 0
+      id: 156
+      linkPhone: '19180930098'
+      merchantNo: '10000144'
+      name: xzh测试商户C
+      state: 1
+    - bikeNum: 0
+      id: 157
+      linkPhone: '19180930099'
+      merchantNo: '10000145'
+      name: xzh测试商户C
+      state: 1
+    - bikeNum: 0
+      id: 154
+      linkPhone: '19180930096'
+      merchantNo: '10000142'
+      name: xzh测试商户C
+      state: 1
+    - bikeNum: 0
+      id: 153
+      linkPhone: '19180930095'
+      merchantNo: '10000141'
+      name: xzh测试商户C
+      state: 1
+    - bikeNum: 0
+      id: 155
+      linkPhone: '19180930097'
+      merchantNo: '10000143'
+      name: xzh测试商户C
+      state: 1
+    - bikeNum: 0
+      id: 152
+      linkPhone: '19180930094'
+      merchantNo: '10000140'
+      name: xzh测试商户C
+      state: 1
+    - bikeNum: 0
+      id: 150
+      linkPhone: '19180930092'
+      merchantNo: '10000138'
+      name: xzh测试商户C
+      state: 1
+    - bikeNum: 0
+      id: 151
+      linkPhone: '19180930093'
+      merchantNo: '10000139'
+      name: xzh测试商户C
+      state: 1
+    - bikeNum: 0
+      id: 149
+      linkPhone: '19180930091'
+      merchantNo: '10000137'
+      name: xzh测试商户C
+      state: 1
+    - bikeNum: 0
+      id: 147
+      linkPhone: '19180930089'
+      merchantNo: '10000135'
+      name: xzh测试商户C
+      state: 1
+    total: 101
+  message: 成功
+- code: '00000'
+  data:
+    list:
+    - bikeNum: 0
+      id: 156
+      linkPhone: '19180930098'
+      merchantNo: '10000144'
+      name: xzh测试商户C
+      state: 1
+    total: 1
+  message: 成功
+- code: '00006'
+  message: 参数校验错误
+- code: '00006'
+  message: 参数校验错误
+- code: '00006'
+  message: 参数校验错误

@@ -20,10 +20,11 @@ depends_key = readYaml[1]['depends_value']
 print(depends_key)
 for get_key in depends_key:
     list_key = get_key.split('.')
+    get_value = yaml_util.read_yaml('web_testcase/case/response.yaml')
     for str_key in list_key:
         try:
-            str_key = int(str_key)
-            get_value = yaml_util.read_yaml('/test.yaml')[str_key]
+            get_value = get_value[str_key]
         except:
-            get_value = yaml_util.read_yaml('/test.yaml')[str_key]
+            str_key = int(str_key)
+            get_value = get_value[str_key]
     print(get_value)

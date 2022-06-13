@@ -1,8 +1,9 @@
-base_url: https://test.bike.ledear.cn
+#base_url: https://test.bike.ledear.cn
+base_url: https://test.rent.ledear.cn
 header:
   content-type: application/json
   source_type: '3'
-  area_id: '10'
+#  area_id: '10'
 login_header:
   content-type: application/json
   source_type: '3'

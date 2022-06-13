@@ -12,3 +12,4 @@ from common import yaml_util
 @pytest.fixture(scope='session', autouse=True)
 def clean_extract():
     yaml_util.clean_yaml('/web_testcase/case/dependCase.yaml')
+    yaml_util.clean_yaml('web_testcase/case/response.yaml')

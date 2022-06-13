@@ -25,7 +25,8 @@ class TestLogin(CommonUtil):
         asserts = caseinfo['asserts']
         logger.info('测试接口：%s' % name)
         try:
-            res = RequestsUtil.session.request(method=method, url=url, headers=header, params=data)
+            # res = RequestsUtil.session.request(method=method, url=url, headers=header, params=data)
+            res = RequestsUtil.session.request(method=method, url=url, headers=header, json=data)
         except SystemError:
             logger.error('登录失败')
         assert_in(asserts, res.json()['message'])
