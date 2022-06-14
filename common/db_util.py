@@ -6,7 +6,7 @@ yaml_data = yaml_util.read_yaml('/baseconfig.yaml')
 host = yaml_data['host']
 port = yaml_data['port']
 user = yaml_data['user']
-password = yaml_data['password']
+password = str(yaml_data['password'])
 db = yaml_data['db']
 charset = yaml_data['charset']
 
@@ -27,12 +27,19 @@ def connect_mysql():
         raise Exception("数据库连接失败")
 
 
+def handle_mysql(sql):
+    conn = connect_mysql()
+    cur = conn.cursor()
+    for sql_data in sql:
+        cur.execute(sql_data)
+        conn.commit()
+    conn.close()
+
+
 if __name__ == '__main__':
-    db_mysql = connect_mysql()
-    cur = db_mysql.cursor()
-    sql = 'select * from bike_model'
-    select_result = cur.execute(sql)
-    data = cur.fetchall()
-    print(len(list(data)))
-    print(list(data))
-    print(data)
+    # s = 'select * from bike_model'
+    s = [
+        'select * from app001_publisher',
+        'insert into app001_publisher (`name`, `address`) values ("hhh", "a")'
+    ]
+    handle_mysql(s)

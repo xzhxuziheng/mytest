@@ -13,9 +13,13 @@ log_level: INFO
 handler_log_log_level: INFO
 all_api_yaml: /web_testcase/case/all_api.yaml
 # 数据库连接
-host: ledear-test-porladb.rwlb.rds.aliyuncs.com
+#host: ledear-test-porladb.rwlb.rds.aliyuncs.com
+host: 162.14.82.120
 port: 3306
-user: dba
-password: XQiVFQyXLZ^iUWeA
-db: rent
+#user: dba
+user: root
+#password: XQiVFQyXLZ^iUWeA
+password: 123456
+#db: rent
+db: bookshop
 charset: utf8
