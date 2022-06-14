@@ -17,3 +17,9 @@
 #    phone: 18408229871
 #    code: 930619
 #  asserts: '成功'
+
+a = None
+if a == 1 or a is None:
+    print('00000')
+else:
+    print('111111')

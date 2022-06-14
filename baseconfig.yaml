@@ -1,4 +1,6 @@
+# 乐迪共享测试域名
 #base_url: https://test.bike.ledear.cn
+# 乐迪长租测试域名
 base_url: https://test.rent.ledear.cn
 header:
   content-type: application/json
@@ -10,3 +12,10 @@ login_header:
 log_level: INFO
 handler_log_log_level: INFO
 all_api_yaml: /web_testcase/case/all_api.yaml
+# 数据库连接
+host: ledear-test-porladb.rwlb.rds.aliyuncs.com
+port: 3306
+user: dba
+password: XQiVFQyXLZ^iUWeA
+db: rent
+charset: utf8

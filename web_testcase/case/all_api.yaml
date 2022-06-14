@@ -3,14 +3,14 @@
   url: /rent-api/merchant/platform/merchant
   method: post
   data:
-    name: API-test商户
+    name: API-test2
     linkMan: API
     linkPhone: 19180939001
     operateCycle: 2
     deposit: 999999
     imgUrl: merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg
-    operateStartTime: 09:00
-    operateEndTime: 22:00
+    operateStartTime: '09:00'
+    operateEndTime: '22:00'
     percentage: 99.99
     bizUserId: 9001
     bizUserName:
@@ -32,14 +32,6 @@
     pageSize: 10
   asserts: 成功
   depends: n
-  depends_key:
-    - orderNo
-    - bikeNo
-    - userPhone
-  depends_value:
-    - 0.data.list.0.orderNo
-    - 0.data.list.0.bikeNo
-    - 0.data.list.0.userPhone
 -
   name: 2-商户列表查询
   url: /rent-api/merchant/platform/merchant/list
@@ -49,6 +41,7 @@
     pageSize: 10
   asserts: 成功
   depends: y
+  depends_site:
   depends_key:
     - merchantNo
     - name
@@ -66,6 +59,7 @@
   data:
   asserts: 成功
   depends: y
+  depends_site: body
   depends_key:
     - id
   depends_value:
@@ -78,6 +72,7 @@
     status: 0
   asserts: 成功
   depends: y
+  depends_site: url
   depends_key:
     - id
   depends_value:
@@ -90,6 +85,7 @@
     status: 0
   asserts: 成功
   depends: y
+  depends_site: url
   depends_key:
     - id
   depends_value:
@@ -105,10 +101,11 @@
     operateCycle: 1
     deposit: 1000001
     imgUrl: merchant/merchant/img/1b455211-c5e5-4ba0-b3c4-8336bd754ee8.jpg
-    operateStartTime: 09:30
-    operateEndTime: 22:30
+    operateStartTime: '09:30'
+    operateEndTime: '22:30'
   asserts: 成功
   depends: y
+  depends_site: url
   depends_key:
     - id
   depends_value:

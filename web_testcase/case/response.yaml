@@ -1,8 +1,20 @@
-- code: '00006'
-  message: 参数校验错误
+- code: P0002
+  message: 该手机号已经注册
 - code: '00000'
   data:
     list:
+    - bikeNum: 0
+      id: 165
+      linkPhone: '19180939001'
+      merchantNo: '10000153'
+      name: API-test2
+      state: 0
+    - bikeNum: 0
+      id: 164
+      linkPhone: '19180939002'
+      merchantNo: '10000152'
+      name: API-test1
+      state: 0
     - bikeNum: 0
       id: 156
       linkPhone: '19180930098'
@@ -51,34 +63,50 @@
       merchantNo: '10000139'
       name: xzh测试商户C
       state: 1
-    - bikeNum: 0
-      id: 149
-      linkPhone: '19180930091'
-      merchantNo: '10000137'
-      name: xzh测试商户C
-      state: 1
-    - bikeNum: 0
-      id: 147
-      linkPhone: '19180930089'
-      merchantNo: '10000135'
-      name: xzh测试商户C
-      state: 1
-    total: 101
+    total: 103
   message: 成功
 - code: '00000'
   data:
     list:
     - bikeNum: 0
-      id: 156
-      linkPhone: '19180930098'
-      merchantNo: '10000144'
-      name: xzh测试商户C
-      state: 1
+      id: 165
+      linkPhone: '19180939001'
+      merchantNo: '10000153'
+      name: API-test2
+      state: 0
     total: 1
   message: 成功
-- code: '00006'
-  message: 参数校验错误
-- code: '00006'
-  message: 参数校验错误
-- code: '00006'
-  message: 参数校验错误
+- code: '00000'
+  data:
+    address: 四川省成都市武侯区石羊街道因材施教教育(高新大源校区)清凤时代城
+    area: 武侯区
+    bikeModelInfoVoList: []
+    bikeNum: 0
+    bizChanged: false
+    bizUserId: 9001
+    city: 成都市
+    createTime: '2022-06-14 18:45:11'
+    deposit: 999999
+    id: 165
+    imgOssUrl: https://test.static.ledear.cn/merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg?Expires=1655207212&OSSAccessKeyId=LTAI5tCxZcKRGLu989twGnHz&Signature=A5IYQ26%2FOPgV1nlXL4Qf3CJbT2o%3D
+    imgUrl: merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg
+    linkMan: API
+    linkPhone: '19180939001'
+    merchantNo: '10000153'
+    name: API-test2
+    operateCycle: 2
+    operateEndTime: '22:00'
+    operateStartTime: 09:00
+    percentage: 99.99
+    position:
+      lat: 30.557735
+      lon: 104.04446
+    province: 四川省
+    state: 0
+  message: 成功
+- code: '00000'
+  message: 成功
+- code: '00000'
+  message: 成功
+- code: '00001'
+  message: 系统错误，请重试
