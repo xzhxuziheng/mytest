@@ -1,0 +1,22 @@
+/*.side-nav__brand {*/
+/*  background: url('custom-logo.svg') no-repeat left center !important;*/
+/*  margin-left: 10px;*/
+/*}*/
+.side-nav__brand {
+  background: url('test-logo.png') no-repeat left center !important;
+  margin-right: 10px;
+  height: 100px;
+  background-size: contain !important;
+}
+.side-nav__brand span{
+	display: none;
+}
+/*.side-nav__brand:after{*/
+/*	content: "自动化测试报告";*/
+/*    font-size: 25px;*/
+/*	margin-left: 30px;*/
+/*    display: inline-block;*/
+/*    !*text-align: justify;*!*/
+/*    !*text-align-last: justify;*!*/
+
+/*}*/

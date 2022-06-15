@@ -1,20 +1,14 @@
-- code: P0002
-  message: 该手机号已经注册
+- code: '00000'
+  message: 成功
 - code: '00000'
   data:
     list:
     - bikeNum: 0
-      id: 165
+      id: 205
       linkPhone: '19180939001'
-      merchantNo: '10000153'
-      name: API-test2
-      state: 0
-    - bikeNum: 0
-      id: 164
-      linkPhone: '19180939002'
-      merchantNo: '10000152'
-      name: API-test1
-      state: 0
+      merchantNo: '10000193'
+      name: API-test
+      state: 1
     - bikeNum: 0
       id: 156
       linkPhone: '19180930098'
@@ -63,17 +57,23 @@
       merchantNo: '10000139'
       name: xzh测试商户C
       state: 1
-    total: 103
+    - bikeNum: 0
+      id: 149
+      linkPhone: '19180930091'
+      merchantNo: '10000137'
+      name: xzh测试商户C
+      state: 1
+    total: 102
   message: 成功
 - code: '00000'
   data:
     list:
     - bikeNum: 0
-      id: 165
+      id: 205
       linkPhone: '19180939001'
-      merchantNo: '10000153'
-      name: API-test2
-      state: 0
+      merchantNo: '10000193'
+      name: API-test
+      state: 1
     total: 1
   message: 成功
 - code: '00000'
@@ -85,15 +85,15 @@
     bizChanged: false
     bizUserId: 9001
     city: 成都市
-    createTime: '2022-06-14 18:45:11'
+    createTime: '2022-06-15 17:33:43'
     deposit: 999999
-    id: 165
-    imgOssUrl: https://test.static.ledear.cn/merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg?Expires=1655207212&OSSAccessKeyId=LTAI5tCxZcKRGLu989twGnHz&Signature=A5IYQ26%2FOPgV1nlXL4Qf3CJbT2o%3D
+    id: 205
+    imgOssUrl: https://test.static.ledear.cn/merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg?Expires=1655289224&OSSAccessKeyId=LTAI5tCxZcKRGLu989twGnHz&Signature=quPNxxq13MdOykHgthTmsmsJLv4%3D
     imgUrl: merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg
     linkMan: API
     linkPhone: '19180939001'
-    merchantNo: '10000153'
-    name: API-test2
+    merchantNo: '10000193'
+    name: API-test
     operateCycle: 2
     operateEndTime: '22:00'
     operateStartTime: 09:00
@@ -102,11 +102,15 @@
       lat: 30.557735
       lon: 104.04446
     province: 四川省
-    state: 0
+    state: 1
   message: 成功
 - code: '00000'
   message: 成功
 - code: '00000'
   message: 成功
-- code: '00001'
-  message: 系统错误，请重试
+- code: '00000'
+  message: 成功
+- code: '00000'
+  message: 成功
+- code: '00000'
+  message: 成功

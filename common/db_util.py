@@ -37,9 +37,13 @@ def handle_mysql(sql):
 
 
 if __name__ == '__main__':
-    # s = 'select * from bike_model'
-    s = [
-        'select * from app001_publisher',
-        'insert into app001_publisher (`name`, `address`) values ("hhh", "a")'
-    ]
+    # s = [
+    #     'select * from app001_publisher',
+    #     'insert into app001_publisher (`name`, `address`) values ("hhh", "a")'
+    # ]
+    # s = [
+    #     'delete from merchant where name = "API-test1"'
+    # ]
+    # handle_mysql(s)
+    s = yaml_util.read_yaml('/web_testcase/case/mysql.yaml')['delete']
     handle_mysql(s)

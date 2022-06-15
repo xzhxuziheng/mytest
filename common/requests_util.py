@@ -14,6 +14,10 @@ class RequestsUtil:
             res = RequestsUtil.session.request(method, url, json=data, **kwargs)
         elif method == 'put':
             res = RequestsUtil.session.request(method, url, json=data, **kwargs)
+        elif method == 'patch':
+            res = RequestsUtil.session.request(method, url, json=data, **kwargs)
+        elif method == 'delete':
+            res = RequestsUtil.session.request(method, url, params=data, **kwargs)
         return res
 
 

@@ -1,20 +1,20 @@
 {
-  "reportName" : "Allure Report",
-  "testRuns" : [ ],
-  "statistic" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 6,
-    "unknown" : 0,
-    "total" : 6
-  },
-  "time" : {
-    "start" : 1649846204086,
-    "stop" : 1649846204445,
-    "duration" : 359,
-    "minDuration" : 0,
-    "maxDuration" : 295,
-    "sumDuration" : 351
-  }
+    "reportName": "自动化测试报告",
+    "testRuns": [],
+    "statistic": {
+        "failed": 0,
+        "broken": 0,
+        "skipped": 0,
+        "passed": 10,
+        "unknown": 0,
+        "total": 10
+    },
+    "time": {
+        "start": 1655285623812,
+        "stop": 1655285624757,
+        "duration": 945,
+        "minDuration": 66,
+        "maxDuration": 172,
+        "sumDuration": 914
+    }
 }

@@ -67,14 +67,15 @@ class TestAllApi:
                     data.update(depends_data)
                 res = RequestsUtil().send_request(method, url, data, headers=header)
                 yaml_util.write_yaml('/web_testcase/case/response.yaml', [res.json()])
-                logger.info('请求头：%s' % res.request.headers)
-                logger.info('请求路径：%s' % res.request.url)
-                logger.info('请求参数：%s' % res.request.body)
-                logger.info('响应结果：%s' % res.json())
             elif depends_site == 'url':
                 res = RequestsUtil().send_request(method, url, data, headers=header, params=depends_data)
                 yaml_util.write_yaml('/web_testcase/case/response.yaml', [res.json()])
-                logger.info('请求头：%s' % res.request.headers)
-                logger.info('请求路径：%s' % res.request.url)
-                logger.info('请求参数：%s' % res.request.body)
-                logger.info('响应结果：%s' % res.json())
+        res.content.decode("unicode-escape")
+        logger.info('请求头：%s' % res.request.headers)
+        logger.info('请求路径：%s' % res.request.url)
+        try:
+            # 输出\u编码将其转换成中文 eg：\\u56db\\u5ddd\\u7701\\u6210\\u90fd\\u5e02\\u6b66\\u4faf\\u533a\\u77f3
+            logger.info('请求参数：%s' % res.request.body.decode("unicode-escape"))
+        except AttributeError:
+            logger.info('请求参数：%s' % res.request.body)
+        logger.info('响应结果：%s' % res.json())

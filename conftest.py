@@ -17,10 +17,5 @@ def clean_extract():
 
 @pytest.fixture(scope='session', autouse=True)
 def db_delete():
-    db_mysql = db_util.connect_mysql()
-    cur = db_mysql.cursor()
-    sql = [
-        'delete from merchant where `name` = "API-test1"'
-    ]
-    for sql_data in sql:
-        cur.execute(sql_data)
+    sql_data_delete = yaml_util.read_yaml('/web_testcase/case/mysql.yaml')['delete']
+    db_util.handle_mysql(sql_data_delete)

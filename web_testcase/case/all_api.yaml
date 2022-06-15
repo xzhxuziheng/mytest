@@ -3,7 +3,7 @@
   url: /rent-api/merchant/platform/merchant
   method: post
   data:
-    name: API-test2
+    name: API-test
     linkMan: API
     linkPhone: 19180939001
     operateCycle: 2
@@ -82,7 +82,7 @@
   url: /rent-api/merchant/platform/merchant/update-status
   method: put
   data:
-    status: 0
+    status: 1
   asserts: 成功
   depends: y
   depends_site: url
@@ -103,6 +103,40 @@
     imgUrl: merchant/merchant/img/1b455211-c5e5-4ba0-b3c4-8336bd754ee8.jpg
     operateStartTime: '09:30'
     operateEndTime: '22:30'
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_key:
+    - id
+  depends_value:
+    - 2.data.list.0.id
+-
+  name: 7-商户详情修改分账信息
+  url: /rent-api/merchant/platform/merchant/bill-info
+  method: put
+  data:
+    bizUserId: "9002"
+    bizUserName: "API-通联"
+    percentage: "100.00"
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_key:
+    - id
+  depends_value:
+    - 2.data.list.0.id
+-
+  name: 8-商户详情修改营业位置
+  url: /rent-api/merchant/platform/merchant/region-info
+  method: put
+  data:
+    address: "四川省成都市武侯区石羊街道剑南大道中段成都高新技术产业开发区(南区)"
+    area: "武侯区"
+    city: "成都市"
+    position:
+      lon: "104.046356"
+      lat: "30.549605"
+    province: "四川省"
   asserts: 成功
   depends: y
   depends_site: url
