@@ -1,0 +1,7 @@
+INFO     web_testcase.api.test_all_api:test_all_api.py:31 测试接口：2-13商户通知列表运营规则通知数据查询
+INFO     web_testcase.api.test_all_api:test_all_api.py:65 我是depends_data：{'title': '这是一个API精准商户文本运营规则通知', 'notifyType': 3}
+INFO     web_testcase.api.test_all_api:test_all_api.py:66 我是depends_data类型：<class 'dict'>
+INFO     web_testcase.api.test_all_api:test_all_api.py:79 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoxOX0.ztipEK5fpqRyfo6tC28Tsd-zh7I0SuzrllbtrdXAZpE'}
+INFO     web_testcase.api.test_all_api:test_all_api.py:80 请求路径：https://test.rent.ledear.cn/rent-api/merchant/platform/merchant-notify/list?page=1&pageSize=10&operatorId=19&title=%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AAAPI%E7%B2%BE%E5%87%86%E5%95%86%E6%88%B7%E6%96%87%E6%9C%AC%E8%BF%90%E8%90%A5%E8%A7%84%E5%88%99%E9%80%9A%E7%9F%A5&notifyType=3
+INFO     web_testcase.api.test_all_api:test_all_api.py:85 请求参数：None
+INFO     web_testcase.api.test_all_api:test_all_api.py:86 响应结果：{'code': '00000', 'message': '成功', 'data': {'total': 1, 'list': [{'id': 289, 'title': '这是一个API精准商户文本运营规则通知', 'notifyType': 3, 'operator': 'xzh测试专用角色-乐迪测试机', 'pushTime': '2022-06-16 14:03:36', 'totalNum': 1, 'readNum': 0}]}}

@@ -1,12 +1,14 @@
-- code: '00000'
+1-1:
+  code: '00000'
   message: 成功
-- code: '00000'
+1-2:
+  code: '00000'
   data:
     list:
     - bikeNum: 0
-      id: 205
+      id: 209
       linkPhone: '19180939001'
-      merchantNo: '10000193'
+      merchantNo: '10000197'
       name: API-test
       state: 1
     - bikeNum: 0
@@ -65,18 +67,20 @@
       state: 1
     total: 102
   message: 成功
-- code: '00000'
+1-3:
+  code: '00000'
   data:
     list:
     - bikeNum: 0
-      id: 205
+      id: 209
       linkPhone: '19180939001'
-      merchantNo: '10000193'
+      merchantNo: '10000197'
       name: API-test
       state: 1
     total: 1
   message: 成功
-- code: '00000'
+1-4:
+  code: '00000'
   data:
     address: 四川省成都市武侯区石羊街道因材施教教育(高新大源校区)清凤时代城
     area: 武侯区
@@ -85,14 +89,14 @@
     bizChanged: false
     bizUserId: 9001
     city: 成都市
-    createTime: '2022-06-15 17:33:43'
+    createTime: '2022-06-16 14:03:34'
     deposit: 999999
-    id: 205
-    imgOssUrl: https://test.static.ledear.cn/merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg?Expires=1655289224&OSSAccessKeyId=LTAI5tCxZcKRGLu989twGnHz&Signature=quPNxxq13MdOykHgthTmsmsJLv4%3D
+    id: 209
+    imgOssUrl: https://test.static.ledear.cn/merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg?Expires=1655363014&OSSAccessKeyId=LTAI5tCxZcKRGLu989twGnHz&Signature=wsfYPfhg5CvQtxIVFjllpk3G43w%3D
     imgUrl: merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg
     linkMan: API
     linkPhone: '19180939001'
-    merchantNo: '10000193'
+    merchantNo: '10000197'
     name: API-test
     operateCycle: 2
     operateEndTime: '22:00'
@@ -104,13 +108,450 @@
     province: 四川省
     state: 1
   message: 成功
-- code: '00000'
+1-5:
+  code: '00000'
   message: 成功
-- code: '00000'
+1-6:
+  code: '00000'
   message: 成功
-- code: '00000'
+1-7:
+  code: '00000'
   message: 成功
-- code: '00000'
+1-8:
+  code: '00000'
   message: 成功
-- code: '00000'
+1-9:
+  code: '00000'
+  message: 成功
+2-1:
+  code: '00000'
+  message: 成功
+2-2:
+  code: '00000'
+  data:
+    list:
+    - id: 287
+      notifyType: 1
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-16 14:03:35'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 102
+    - id: 269
+      notifyType: 2
+      operator: 测试-龚晓荣
+      pushTime: '2022-06-02 22:12:23'
+      readNum: 0
+      title: '222'
+      totalNum: 101
+    - id: 265
+      notifyType: 3
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:45:43'
+      readNum: 0
+      title: '5367536425'
+      totalNum: 23
+    - id: 264
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:43:48'
+      readNum: 0
+      title: '4565'
+      totalNum: 41
+    - id: 263
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:27:20'
+      readNum: 0
+      title: 北京市通知
+      totalNum: 6
+    - id: 262
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:26:30'
+      readNum: 0
+      title: 市一级的通知
+      totalNum: 2
+    - id: 261
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:43:57'
+      readNum: 0
+      title: Ⅱirtgdhfterdfg
+      totalNum: 3
+    - id: 260
+      notifyType: 1
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:43:26'
+      readNum: 0
+      title: '3243'
+      totalNum: 4
+    - id: 259
+      notifyType: 4
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:41:39'
+      readNum: 0
+      title: 这是一个图片通知
+      totalNum: 1
+    total: 9
+  message: 成功
+2-3:
+  code: '00000'
+  data:
+    list:
+    - id: 287
+      notifyType: 1
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-16 14:03:35'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 102
+    total: 1
+  message: 成功
+2-4:
+  code: '00000'
+  data:
+    content: 这是一个API文本内容
+    contentType: 1
+    id: 287
+    merchantList: []
+    notifyType: 1
+    operator: xzh测试专用角色-乐迪测试机
+    pushRange: 1
+    pushTime: '2022-06-16 14:03:35'
+    readNum: 0
+    regionList: []
+    title: 这是一个API全部商户文本系统通知
+    totalNum: 102
+  message: 成功
+2-5:
+  code: '00000'
+  message: 成功
+2-6:
+  code: '00000'
+  message: 成功
+2-7:
+  code: '00000'
+  data:
+    list:
+    - id: 288
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-16 14:03:35'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 2
+    - id: 269
+      notifyType: 2
+      operator: 测试-龚晓荣
+      pushTime: '2022-06-02 22:12:23'
+      readNum: 0
+      title: '222'
+      totalNum: 101
+    - id: 265
+      notifyType: 3
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:45:43'
+      readNum: 0
+      title: '5367536425'
+      totalNum: 23
+    - id: 264
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:43:48'
+      readNum: 0
+      title: '4565'
+      totalNum: 41
+    - id: 263
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:27:20'
+      readNum: 0
+      title: 北京市通知
+      totalNum: 6
+    - id: 262
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:26:30'
+      readNum: 0
+      title: 市一级的通知
+      totalNum: 2
+    - id: 261
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:43:57'
+      readNum: 0
+      title: Ⅱirtgdhfterdfg
+      totalNum: 3
+    - id: 260
+      notifyType: 1
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:43:26'
+      readNum: 0
+      title: '3243'
+      totalNum: 4
+    - id: 259
+      notifyType: 4
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:41:39'
+      readNum: 0
+      title: 这是一个图片通知
+      totalNum: 1
+    total: 9
+  message: 成功
+2-8:
+  code: '00000'
+  data:
+    list:
+    - id: 288
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-16 14:03:35'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 2
+    total: 1
+  message: 成功
+2-9:
+  code: '00000'
+  data:
+    contentType: 2
+    id: 288
+    imgOssUrl: https://test.static.ledear.cn/merchant/merchant_notify/img/0bc1b567-09cf-455a-81a9-0f4381d65d88.jpg?Expires=1655363016&OSSAccessKeyId=LTAI5tCxZcKRGLu989twGnHz&Signature=qoa9MCimLv%2B2dP23G8Fbm92dEQ0%3D
+    imgUrl: merchant/merchant_notify/img/0bc1b567-09cf-455a-81a9-0f4381d65d88.jpg
+    merchantList: []
+    notifyType: 2
+    operator: xzh测试专用角色-乐迪测试机
+    pushRange: 2
+    pushTime: '2022-06-16 14:03:35'
+    readNum: 0
+    regionList:
+    - area: 武侯区
+      city: 成都市
+      province: 四川省
+    title: 这是一个API区域商户图片营销通知
+    totalNum: 2
+  message: 成功
+2-10:
+  code: '00000'
+  message: 成功
+2-11:
+  code: '00000'
+  message: 成功
+2-12:
+  code: '00000'
+  data:
+    list:
+    - id: 289
+      notifyType: 3
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-16 14:03:36'
+      readNum: 0
+      title: 这是一个API精准商户文本运营规则通知
+      totalNum: 1
+    - id: 269
+      notifyType: 2
+      operator: 测试-龚晓荣
+      pushTime: '2022-06-02 22:12:23'
+      readNum: 0
+      title: '222'
+      totalNum: 101
+    - id: 265
+      notifyType: 3
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:45:43'
+      readNum: 0
+      title: '5367536425'
+      totalNum: 23
+    - id: 264
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:43:48'
+      readNum: 0
+      title: '4565'
+      totalNum: 41
+    - id: 263
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:27:20'
+      readNum: 0
+      title: 北京市通知
+      totalNum: 6
+    - id: 262
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:26:30'
+      readNum: 0
+      title: 市一级的通知
+      totalNum: 2
+    - id: 261
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:43:57'
+      readNum: 0
+      title: Ⅱirtgdhfterdfg
+      totalNum: 3
+    - id: 260
+      notifyType: 1
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:43:26'
+      readNum: 0
+      title: '3243'
+      totalNum: 4
+    - id: 259
+      notifyType: 4
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:41:39'
+      readNum: 0
+      title: 这是一个图片通知
+      totalNum: 1
+    total: 9
+  message: 成功
+2-13:
+  code: '00000'
+  data:
+    list:
+    - id: 289
+      notifyType: 3
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-16 14:03:36'
+      readNum: 0
+      title: 这是一个API精准商户文本运营规则通知
+      totalNum: 1
+    total: 1
+  message: 成功
+2-14:
+  code: '00000'
+  data:
+    content: '这是一个API文本内容
+
+      这
+
+      是一
+
+      个API
+
+      文本内容'
+    contentType: 1
+    id: 289
+    merchantList:
+    - 209
+    merchantName: API-test1
+    notifyType: 3
+    operator: xzh测试专用角色-乐迪测试机
+    pushRange: 3
+    pushTime: '2022-06-16 14:03:36'
+    readNum: 0
+    regionList: []
+    title: 这是一个API精准商户文本运营规则通知
+    totalNum: 1
+  message: 成功
+2-15:
+  code: '00000'
+  message: 成功
+2-16:
+  code: '00000'
+  message: 成功
+2-17:
+  code: '00000'
+  data:
+    list:
+    - id: 290
+      notifyType: 4
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-16 14:03:36'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 102
+    - id: 269
+      notifyType: 2
+      operator: 测试-龚晓荣
+      pushTime: '2022-06-02 22:12:23'
+      readNum: 0
+      title: '222'
+      totalNum: 101
+    - id: 265
+      notifyType: 3
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:45:43'
+      readNum: 0
+      title: '5367536425'
+      totalNum: 23
+    - id: 264
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:43:48'
+      readNum: 0
+      title: '4565'
+      totalNum: 41
+    - id: 263
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:27:20'
+      readNum: 0
+      title: 北京市通知
+      totalNum: 6
+    - id: 262
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 15:26:30'
+      readNum: 0
+      title: 市一级的通知
+      totalNum: 2
+    - id: 261
+      notifyType: 2
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:43:57'
+      readNum: 0
+      title: Ⅱirtgdhfterdfg
+      totalNum: 3
+    - id: 260
+      notifyType: 1
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:43:26'
+      readNum: 0
+      title: '3243'
+      totalNum: 4
+    - id: 259
+      notifyType: 4
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-02 14:41:39'
+      readNum: 0
+      title: 这是一个图片通知
+      totalNum: 1
+    total: 9
+  message: 成功
+2-18:
+  code: '00000'
+  data:
+    list:
+    - id: 290
+      notifyType: 4
+      operator: xzh测试专用角色-乐迪测试机
+      pushTime: '2022-06-16 14:03:36'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 102
+    total: 1
+  message: 成功
+2-19:
+  code: '00000'
+  data:
+    contentType: 2
+    id: 290
+    imgOssUrl: https://test.static.ledear.cn/merchant/merchant_notify/img/894ee202-ac2a-4a8c-a541-962b54238956.jpg?Expires=1655363017&OSSAccessKeyId=LTAI5tCxZcKRGLu989twGnHz&Signature=gzgHn0u08mhPfc26vcDQnayYCMY%3D
+    imgUrl: merchant/merchant_notify/img/894ee202-ac2a-4a8c-a541-962b54238956.jpg
+    merchantList: []
+    notifyType: 4
+    operator: xzh测试专用角色-乐迪测试机
+    pushRange: 2
+    pushTime: '2022-06-16 14:03:36'
+    readNum: 0
+    regionList:
+    - province: 四川省
+    title: 这是一个API区域商户图片其他通知
+    totalNum: 102
+  message: 成功
+2-20:
+  code: '00000'
   message: 成功

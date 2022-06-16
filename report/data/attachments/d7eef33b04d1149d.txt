@@ -1,7 +1,0 @@
-INFO     web_testcase.api.test_all_api:test_all_api.py:30 测试接口：2-商户列表查询
-INFO     web_testcase.api.test_all_api:test_all_api.py:60 我是depends_data：{'merchantNo': '10000193', 'name': 'API-test', 'phone': '19180939001', 'state': 1}
-INFO     web_testcase.api.test_all_api:test_all_api.py:61 我是depends_data类型：<class 'dict'>
-INFO     web_testcase.api.test_all_api:test_all_api.py:74 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoxOX0.gHGNKoBJl25mVWjwWgP3G4LSoboHd0_Yj5iAheNo6AQ'}
-INFO     web_testcase.api.test_all_api:test_all_api.py:75 请求路径：https://test.rent.ledear.cn/rent-api/merchant/platform/merchant/list?page=1&pageSize=10&merchantNo=10000193&name=API-test&phone=19180939001&state=1
-INFO     web_testcase.api.test_all_api:test_all_api.py:79 请求参数：None
-INFO     web_testcase.api.test_all_api:test_all_api.py:80 响应结果：{'code': '00000', 'message': '成功', 'data': {'total': 1, 'list': [{'id': 205, 'merchantNo': '10000193', 'name': 'API-test', 'linkPhone': '19180939001', 'bikeNum': 0, 'state': 1}]}}

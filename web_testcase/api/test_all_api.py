@@ -20,6 +20,7 @@ class TestAllApi:
         # logger.info('请求参数类型：%s' % type(caseinfo))
         depends = str(caseinfo['depends']).upper()
         # logger.info('是否有接口依赖：%s' % depends)
+        num = caseinfo['num']
         name = caseinfo['name']
         url = TestAllApi.base_url+caseinfo['url']
         method = caseinfo['method']
@@ -27,15 +28,16 @@ class TestAllApi:
         token = {'token': yaml_util.read_yaml('/web_testcase/case/dependCase.yaml')['token']}
         header.update(token)
         data = caseinfo['data']
-        logger.info('测试接口：%s' % name)
+        logger.info('测试接口：'+num+'%s' % name)
         if depends == 'N':
             res = RequestsUtil().send_request(method, url, data, headers=header)
-            yaml_util.write_yaml('/web_testcase/case/response.yaml', [res.json()])
+            yaml_util.write_yaml('/web_testcase/case/response.yaml', {num: res.json()})
             # logger.info('请求头：%s' % res.request.headers)
             # logger.info('请求路径：%s' % res.request.url)
             # logger.info('响应结果：%s' % res.json())
         elif depends == 'Y':
             depends_site = caseinfo['depends_site']
+            depends_type = caseinfo['depends_type']
             # 获取依赖key值
             depends_yaml_path_key = caseinfo['depends_key']
             # logger.info('写入依赖的key值：%s' % depends_yaml_path_key)
@@ -56,7 +58,10 @@ class TestAllApi:
                         msg = msg[value]
                         # logger.info('拆分依赖路径：%s' % value)
                 get_depends_value.append(msg)
-            depends_data = dict(zip(depends_yaml_path_key, get_depends_value))
+            if depends_type == 'str':
+                depends_data = dict(zip(depends_yaml_path_key, get_depends_value))
+            elif depends_type == 'list':
+                depends_data = dict(zip(depends_yaml_path_key, [get_depends_value]))
             logger.info('我是depends_data：%s' % depends_data)
             logger.info('我是depends_data类型：%s' % type(depends_data))
             if depends_site == 'body' or depends_site is None:
@@ -66,10 +71,10 @@ class TestAllApi:
                 else:
                     data.update(depends_data)
                 res = RequestsUtil().send_request(method, url, data, headers=header)
-                yaml_util.write_yaml('/web_testcase/case/response.yaml', [res.json()])
+                yaml_util.write_yaml('/web_testcase/case/response.yaml', {num: res.json()})
             elif depends_site == 'url':
                 res = RequestsUtil().send_request(method, url, data, headers=header, params=depends_data)
-                yaml_util.write_yaml('/web_testcase/case/response.yaml', [res.json()])
+                yaml_util.write_yaml('/web_testcase/case/response.yaml', {num: res.json()})
         res.content.decode("unicode-escape")
         logger.info('请求头：%s' % res.request.headers)
         logger.info('请求路径：%s' % res.request.url)

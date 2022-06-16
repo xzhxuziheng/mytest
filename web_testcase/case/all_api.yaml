@@ -1,5 +1,9 @@
+#############################
+# 1、商户管理-商户列表           #
+#############################
 -
-  name: 0-新增商户
+  num: 1-1
+  name: 新增商户
   url: /rent-api/merchant/platform/merchant
   method: post
   data:
@@ -24,7 +28,8 @@
   asserts: 成功
   depends: n
 -
-  name: 1-商户列表获取数据
+  num: 1-2
+  name: 商户列表获取数据
   url: /rent-api/merchant/platform/merchant/list
   method: get
   data:
@@ -33,7 +38,8 @@
   asserts: 成功
   depends: n
 -
-  name: 2-商户列表查询
+  num: 1-3
+  name: 商户列表查询
   url: /rent-api/merchant/platform/merchant/list
   method: get
   data:
@@ -42,30 +48,34 @@
   asserts: 成功
   depends: y
   depends_site:
+  depends_type: str
   depends_key:
     - merchantNo
     - name
     - phone
     - state
   depends_value:
-    - 1.data.list.0.merchantNo
-    - 1.data.list.0.name
-    - 1.data.list.0.linkPhone
-    - 1.data.list.0.state
+    - 1-2.data.list.0.merchantNo
+    - 1-2.data.list.0.name
+    - 1-2.data.list.0.linkPhone
+    - 1-2.data.list.0.state
 -
-  name: 3-查看商户详情
+  num: 1-4
+  name: 查看商户详情
   url: /rent-api/merchant/platform/merchant/merchant-detail
   method: get
   data:
   asserts: 成功
   depends: y
   depends_site: body
+  depends_type: str
   depends_key:
     - id
   depends_value:
-    - 2.data.list.0.id
+    - 1-3.data.list.0.id
 -
-  name: 4-商户详情停运商户
+  num: 1-5
+  name: 商户详情停运商户
   url: /rent-api/merchant/platform/merchant/update-status
   method: put
   data:
@@ -73,12 +83,14 @@
   asserts: 成功
   depends: y
   depends_site: url
+  depends_type: str
   depends_key:
     - id
   depends_value:
-    - 2.data.list.0.id
+    - 1-3.data.list.0.id
 -
-  name: 5-商户详情开启商户
+  num: 1-6
+  name: 商户详情开启商户
   url: /rent-api/merchant/platform/merchant/update-status
   method: put
   data:
@@ -86,12 +98,14 @@
   asserts: 成功
   depends: y
   depends_site: url
+  depends_type: str
   depends_key:
     - id
   depends_value:
-    - 2.data.list.0.id
+    - 1-3.data.list.0.id
 -
-  name: 6-商户详情修改经营信息
+  num: 1-7
+  name: 商户详情修改经营信息
   url: /rent-api/merchant/platform/merchant/base-info
   method: put
   data:
@@ -106,12 +120,14 @@
   asserts: 成功
   depends: y
   depends_site: url
+  depends_type: str
   depends_key:
     - id
   depends_value:
-    - 2.data.list.0.id
+    - 1-3.data.list.0.id
 -
-  name: 7-商户详情修改分账信息
+  num: 1-8
+  name: 商户详情修改分账信息
   url: /rent-api/merchant/platform/merchant/bill-info
   method: put
   data:
@@ -121,12 +137,14 @@
   asserts: 成功
   depends: y
   depends_site: url
+  depends_type: str
   depends_key:
     - id
   depends_value:
-    - 2.data.list.0.id
+    - 1-3.data.list.0.id
 -
-  name: 8-商户详情修改营业位置
+  num: 1-9
+  name: 商户详情修改营业位置
   url: /rent-api/merchant/platform/merchant/region-info
   method: put
   data:
@@ -140,7 +158,305 @@
   asserts: 成功
   depends: y
   depends_site: url
+  depends_type: str
   depends_key:
     - id
   depends_value:
-    - 2.data.list.0.id
+    - 1-3.data.list.0.id
+#############################
+# 2、商户管理-商户通知           #
+#############################
+-
+  num: 2-1
+  name: 商户通知全部商户发布文本系统通知
+  url: /rent-api/merchant/platform/merchant-notify/push-notify
+  method: post
+  data:
+    title: "这是一个API全部商户文本系统通知"
+    notifyType: 1
+    contentType: 1
+    pushRange: 1
+    content: "这是一个API文本内容"
+  asserts: 成功
+  depends: n
+-
+  num: 2-2
+  name: 商户通知获取列表数据
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 2-3
+  name: 商户通知列表系统通知数据查询
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    operatorId: 19
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - title
+    - notifyType
+  depends_value:
+    - 2-2.data.list.0.title
+    - 2-2.data.list.0.notifyType
+-
+  num: 2-4
+  name: 商户通知列表系统通知详情
+  url: /rent-api/merchant/platform/merchant-notify/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-3.data.list.0.id
+-
+  num: 2-5
+  name: 商户通知列表系统通知删除
+  url: /rent-api/merchant/platform/merchant-notify
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-3.data.list.0.id
+-
+  num: 2-6
+  name: 商户通知按区域发布图片营销通知
+  url: /rent-api/merchant/platform/merchant-notify/push-notify
+  method: post
+  data:
+    title: "这是一个API区域商户图片营销通知"
+    notifyType: 2
+    contentType: 2
+    pushRange: 2
+    imgUrl: "merchant/merchant_notify/img/0bc1b567-09cf-455a-81a9-0f4381d65d88.jpg"
+    regionList:
+      -
+        province: "四川省"
+        city: "成都市"
+        area: "武侯区"
+  asserts: 成功
+  depends: n
+-
+  num: 2-7
+  name: 商户通知获取列表数据
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 2-8
+  name: 商户通知列表营销通知数据查询
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    operatorId: 19
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - title
+    - notifyType
+  depends_value:
+    - 2-7.data.list.0.title
+    - 2-7.data.list.0.notifyType
+-
+  num: 2-9
+  name: 商户通知列表营销通知详情
+  url: /rent-api/merchant/platform/merchant-notify/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-8.data.list.0.id
+-
+  num: 2-10
+  name: 商户通知列表营销通知删除
+  url: /rent-api/merchant/platform/merchant-notify
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-8.data.list.0.id
+-
+  num: 2-11
+  name: 商户通知精准发布文本运营规则通知
+  url: /rent-api/merchant/platform/merchant-notify/push-notify
+  method: post
+  data:
+    title: "这是一个API精准商户文本运营规则通知"
+    notifyType: 3
+    contentType: 1
+    pushRange: 3
+    content: "这是一个API文本内容\n这\n是一\n个API\n文本内容"
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: list
+  depends_key:
+    - merchantList
+  depends_value:
+    - 1-3.data.list.0.id
+-
+  num: 2-12
+  name: 商户通知获取列表数据
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 2-13
+  name: 商户通知列表运营规则通知数据查询
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    operatorId: 19
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - title
+    - notifyType
+  depends_value:
+    - 2-12.data.list.0.title
+    - 2-12.data.list.0.notifyType
+-
+  num: 2-14
+  name: 商户通知列表运营规则通知详情
+  url: /rent-api/merchant/platform/merchant-notify/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-13.data.list.0.id
+-
+  num: 2-15
+  name: 商户通知列表运营规则通知删除
+  url: /rent-api/merchant/platform/merchant-notify
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-13.data.list.0.id
+-
+  num: 2-16
+  name: 商户通知区域发布图片其他通知
+  url: /rent-api/merchant/platform/merchant-notify/push-notify
+  method: post
+  data:
+    title: "这是一个API区域商户图片其他通知"
+    notifyType: 4
+    contentType: 2
+    pushRange: 2
+    imgUrl: "merchant/merchant_notify/img/894ee202-ac2a-4a8c-a541-962b54238956.jpg"
+    regionList:
+      -
+        province: "四川省"
+  asserts: 成功
+  depends: n
+-
+  num: 2-17
+  name: 商户通知获取列表数据
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 2-18
+  name: 商户通知列表其他通知数据查询
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    operatorId: 19
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - title
+    - notifyType
+  depends_value:
+    - 2-17.data.list.0.title
+    - 2-17.data.list.0.notifyType
+-
+  num: 2-19
+  name: 商户通知列表其他通知详情
+  url: /rent-api/merchant/platform/merchant-notify/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-18.data.list.0.id
+-
+  num: 2-20
+  name: 商户通知列表其他通知删除
+  url: /rent-api/merchant/platform/merchant-notify
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-18.data.list.0.id
