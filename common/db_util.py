@@ -3,12 +3,12 @@ from common import yaml_util
 
 
 yaml_data = yaml_util.read_yaml('/baseconfig.yaml')
-host = yaml_data['host']
-port = yaml_data['port']
-user = yaml_data['user']
-password = str(yaml_data['password'])
-db = yaml_data['db']
-charset = yaml_data['charset']
+host = yaml_data['mysql_host']
+port = yaml_data['mysql_port']
+user = yaml_data['mysql_user']
+password = str(yaml_data['mysql_password'])
+db = yaml_data['mysql_db']
+charset = yaml_data['mysql_charset']
 
 
 # 连接MySQL数据库

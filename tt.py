@@ -18,7 +18,6 @@
 #    code: 930619
 #  asserts: '成功'
 
-a = ['str', 'int']
-b = [2, 4]
-c = [6, 7]
-print(dict(zip(a, [b, c])))
+li = [1, 2, 3, 4, 5]
+print(li[-1])
+print(type(-1))

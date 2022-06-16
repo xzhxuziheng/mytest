@@ -1,5 +1,5 @@
 #############################
-# 1、商户管理-商户列表           #
+# 1、商户管理-商户列表        #
 #############################
 -
   num: 1-1
@@ -164,7 +164,7 @@
   depends_value:
     - 1-3.data.list.0.id
 #############################
-# 2、商户管理-商户通知           #
+# 2、商户管理-商户通知        #
 #############################
 -
   num: 2-1
@@ -460,3 +460,91 @@
     - notifyId
   depends_value:
     - 2-18.data.list.0.id
+#############################
+# 3、车辆管理-车型管理        #
+#############################
+-
+  num: 3-1
+  name: 车型管理新增车型
+  url: /rent-api/bike/platform/bike-model
+  method: post
+  data:
+    name: "API测试车型"
+    description: "这是一个API测试车型，接口自动化专用"
+    deposit: 0
+    defaultRent: 999
+    depositAmount: 99900
+    picturePath: "bike/bikeModel/img/a160dbd6-c8f3-4735-85c7-7b85b1a05d35.png"
+  asserts: 成功
+  depends: n
+-
+  num: 3-2
+  name: 车型管理列表
+  url: /rent-api/bike/platform/bike-model/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 3-3
+  name: 车型管理编辑车型
+  url: /rent-api/bike/platform/bike-model
+  method: put
+  data:
+    name: "API测试车型编辑"
+    description: "这是一个API测试车型，接口自动化专用，编辑后的车型介绍"
+    deposit: 1
+    defaultRent: 1000
+    depositAmount: 1000000
+    picturePath: "bike/bikeModel/img/c074bf51-ca14-4a15-8e5a-99bc12e537d1.png"
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 3-2.data.list.-1.id
+-
+  num: 3-4
+  name: 车型管理删除车型
+  url: /rent-api/bike/platform/bike-model
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 3-2.data.list.-1.id
+-
+  num: 3-5
+  name: 车型管理再次新增车型
+  url: /rent-api/bike/platform/bike-model
+  method: post
+  data:
+    name: "API测试车型"
+    description: "这是一个API测试车型，接口自动化专用"
+    deposit: 0
+    defaultRent: 999
+    depositAmount: 99900
+    picturePath: "bike/bikeModel/img/a160dbd6-c8f3-4735-85c7-7b85b1a05d35.png"
+  asserts: 成功
+  depends: n
+-
+  num: 3-6
+  name: 车型管理列表再次获取
+  url: /rent-api/bike/platform/bike-model/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+#############################
+# 4、车辆管理-车辆列表       #
+#############################

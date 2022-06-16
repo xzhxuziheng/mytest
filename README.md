@@ -14,7 +14,7 @@
         depends_key：需要添加的key值
         depends_value：格式为1-2.data.list.0.merchantNo，
                        1-2代表用例编号为1-2的接口返回的所有数据，
-                       data代表取第二个接口返回参数中的data值，
+                       data代表取接口返回参数中的data值，
                        后面以此类推
         所有的key对应的value可以为空
     2、dependCase.yaml文件为全局依赖

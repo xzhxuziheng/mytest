@@ -12,14 +12,23 @@ login_header:
 log_level: INFO
 handler_log_log_level: INFO
 all_api_yaml: /web_testcase/case/all_api.yaml
+
+
 # 数据库连接
-host: ledear-test-porladb.rwlb.rds.aliyuncs.com
+mysql_host: ledear-test-porladb.rwlb.rds.aliyuncs.com
 #host: 162.14.82.120
-port: 3306
-user: dba
+mysql_port: 3306
+mysql_user: dba
 #user: root
-password: XQiVFQyXLZ^iUWeA
+mysql_password: XQiVFQyXLZ^iUWeA
 #password: 123456
-db: rent
+mysql_db: rent
 #db: bookshop
-charset: utf8
+mysql_charset: utf8
+
+
+# redis连接
+redis_host: ledear-test-redis.redis.rds.aliyuncs.com
+redis_port: 36379
+redis_db: 0
+redis_password: iupward@123

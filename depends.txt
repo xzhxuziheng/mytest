@@ -7,3 +7,5 @@ allure-pytest
 requests
 PyYaml
 pytest-dependency
+redis
+pymysql
