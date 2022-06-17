@@ -1,5 +1,0 @@
-INFO     web_testcase.api.test_all_api:test_all_api.py:31 测试接口：2-6商户通知按区域发布图片营销通知
-INFO     web_testcase.api.test_all_api:test_all_api.py:79 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoxOX0.ztipEK5fpqRyfo6tC28Tsd-zh7I0SuzrllbtrdXAZpE', 'Content-Length': '346'}
-INFO     web_testcase.api.test_all_api:test_all_api.py:80 请求路径：https://test.rent.ledear.cn/rent-api/merchant/platform/merchant-notify/push-notify
-INFO     web_testcase.api.test_all_api:test_all_api.py:83 请求参数：{"title": "这是一个API区域商户图片营销通知", "notifyType": 2, "contentType": 2, "pushRange": 2, "imgUrl": "merchant/merchant_notify/img/0bc1b567-09cf-455a-81a9-0f4381d65d88.jpg", "regionList": [{"province": "四川省", "city": "成都市", "area": "武侯区"}]}
-INFO     web_testcase.api.test_all_api:test_all_api.py:86 响应结果：{'code': '00000', 'message': '成功'}

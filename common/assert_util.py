@@ -24,7 +24,7 @@ def assert_in(expected, actual):
     try:
         assert expected in actual
     except AssertionError:
-        logger.warning('{0} 不包含于 {1}'.format(expected, actual))
+        logger.error('{0} 不包含于 {1}'.format(expected, actual))
 
 
 def assert_not_in(expected, actual):

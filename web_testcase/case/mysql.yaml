@@ -1,3 +1,5 @@
 delete:
   - delete from merchant where name = 'API-test1'
   - delete from merchant_biz_change_record where biz_user_id = 9001
+  - delete from bike where merchant_name = 'API-test1'
+  - delete from bike_model where name = 'API测试车型'

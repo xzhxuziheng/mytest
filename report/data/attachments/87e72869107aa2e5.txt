@@ -1,7 +1,0 @@
-INFO     web_testcase.api.test_all_api:test_all_api.py:31 测试接口：2-5商户通知列表系统通知删除
-INFO     web_testcase.api.test_all_api:test_all_api.py:65 我是depends_data：{'notifyId': 287}
-INFO     web_testcase.api.test_all_api:test_all_api.py:66 我是depends_data类型：<class 'dict'>
-INFO     web_testcase.api.test_all_api:test_all_api.py:79 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoxOX0.ztipEK5fpqRyfo6tC28Tsd-zh7I0SuzrllbtrdXAZpE', 'Content-Length': '0'}
-INFO     web_testcase.api.test_all_api:test_all_api.py:80 请求路径：https://test.rent.ledear.cn/rent-api/merchant/platform/merchant-notify?notifyId=287
-INFO     web_testcase.api.test_all_api:test_all_api.py:85 请求参数：None
-INFO     web_testcase.api.test_all_api:test_all_api.py:86 响应结果：{'code': '00000', 'message': '成功'}

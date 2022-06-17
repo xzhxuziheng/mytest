@@ -1,7 +1,0 @@
-INFO     web_testcase.api.test_all_api:test_all_api.py:31 测试接口：2-19商户通知列表其他通知详情
-INFO     web_testcase.api.test_all_api:test_all_api.py:65 我是depends_data：{'notifyId': 290}
-INFO     web_testcase.api.test_all_api:test_all_api.py:66 我是depends_data类型：<class 'dict'>
-INFO     web_testcase.api.test_all_api:test_all_api.py:79 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoxOX0.ztipEK5fpqRyfo6tC28Tsd-zh7I0SuzrllbtrdXAZpE'}
-INFO     web_testcase.api.test_all_api:test_all_api.py:80 请求路径：https://test.rent.ledear.cn/rent-api/merchant/platform/merchant-notify/detail?notifyId=290
-INFO     web_testcase.api.test_all_api:test_all_api.py:85 请求参数：None
-INFO     web_testcase.api.test_all_api:test_all_api.py:86 响应结果：{'code': '00000', 'message': '成功', 'data': {'id': 290, 'title': '这是一个API区域商户图片其他通知', 'notifyType': 4, 'operator': 'xzh测试专用角色-乐迪测试机', 'pushRange': 2, 'contentType': 2, 'imgUrl': 'merchant/merchant_notify/img/894ee202-ac2a-4a8c-a541-962b54238956.jpg', 'imgOssUrl': 'https://test.static.ledear.cn/merchant/merchant_notify/img/894ee202-ac2a-4a8c-a541-962b54238956.jpg?Expires=1655363017&OSSAccessKeyId=LTAI5tCxZcKRGLu989twGnHz&Signature=gzgHn0u08mhPfc26vcDQnayYCMY%3D', 'pushTime': '2022-06-16 14:03:36', 'regionList': [{'province': '四川省'}], 'merchantList': [], 'totalNum': 102, 'readNum': 0}}

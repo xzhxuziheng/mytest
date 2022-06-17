@@ -1,0 +1,2 @@
+INFO     web_testcase.api.test_all_api:test_all_api.py:36 测试接口：4-1获取车辆编号
+ERROR    C:\xzh\project\mytest\common\assert_util.py:assert_util.py:27 成功11111111111111111111111111 不包含于 成功

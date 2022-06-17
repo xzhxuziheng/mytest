@@ -1,8 +1,9 @@
 # 文件使用说明
     1、用例yaml文件
         1）传参方式为列表字典
-        2）在接口自动化中必含num、name、url、method、data、asserts、depends
+        2）在接口自动化中必含num、name、execute、url、method、data、asserts、depends
         num为用例编号
+        execute用例是否执行（y为执行，n为不执行）
         method值为get、post、put、patch、delete
         若depends为n，则无后续key
         若depends为y，则后续key必含depends_site、depends_type、depends_key、depends_value
@@ -20,4 +21,11 @@
     2、dependCase.yaml文件为全局依赖
     3、mysql.yaml为用例执行前的sql操作
     4、response.yaml保存所有接口返回参数
+    5、baseconfig.yaml为全局配置
+        1）域名配置
+        2）header配置
+        3）日志等级配置
+        4）项目接口自动化执行yaml文件配置
+        5）数据库配置
+        6）redis配置
  

@@ -4,6 +4,7 @@
 -
   num: 1-1
   name: 新增商户
+  execute: y
   url: /rent-api/merchant/platform/merchant
   method: post
   data:
@@ -30,6 +31,7 @@
 -
   num: 1-2
   name: 商户列表获取数据
+  execute: y
   url: /rent-api/merchant/platform/merchant/list
   method: get
   data:
@@ -40,6 +42,7 @@
 -
   num: 1-3
   name: 商户列表查询
+  execute: y
   url: /rent-api/merchant/platform/merchant/list
   method: get
   data:
@@ -62,6 +65,7 @@
 -
   num: 1-4
   name: 查看商户详情
+  execute: y
   url: /rent-api/merchant/platform/merchant/merchant-detail
   method: get
   data:
@@ -76,6 +80,7 @@
 -
   num: 1-5
   name: 商户详情停运商户
+  execute: y
   url: /rent-api/merchant/platform/merchant/update-status
   method: put
   data:
@@ -91,6 +96,7 @@
 -
   num: 1-6
   name: 商户详情开启商户
+  execute: y
   url: /rent-api/merchant/platform/merchant/update-status
   method: put
   data:
@@ -106,6 +112,7 @@
 -
   num: 1-7
   name: 商户详情修改经营信息
+  execute: y
   url: /rent-api/merchant/platform/merchant/base-info
   method: put
   data:
@@ -128,6 +135,7 @@
 -
   num: 1-8
   name: 商户详情修改分账信息
+  execute: y
   url: /rent-api/merchant/platform/merchant/bill-info
   method: put
   data:
@@ -145,6 +153,7 @@
 -
   num: 1-9
   name: 商户详情修改营业位置
+  execute: y
   url: /rent-api/merchant/platform/merchant/region-info
   method: put
   data:
@@ -163,12 +172,47 @@
     - id
   depends_value:
     - 1-3.data.list.0.id
+-
+  num: 1-10
+  name: 商户列表再次获取数据
+  execute: y
+  url: /rent-api/merchant/platform/merchant/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 1-11
+  name: 商户列表再次查询
+  execute: y
+  url: /rent-api/merchant/platform/merchant/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - merchantNo
+    - name
+    - phone
+    - state
+  depends_value:
+    - 1-10.data.list.0.merchantNo
+    - 1-10.data.list.0.name
+    - 1-10.data.list.0.linkPhone
+    - 1-10.data.list.0.state
 #############################
 # 2、商户管理-商户通知        #
 #############################
 -
   num: 2-1
   name: 商户通知全部商户发布文本系统通知
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/push-notify
   method: post
   data:
@@ -182,6 +226,7 @@
 -
   num: 2-2
   name: 商户通知获取列表数据
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -192,6 +237,7 @@
 -
   num: 2-3
   name: 商户通知列表系统通知数据查询
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -211,6 +257,7 @@
 -
   num: 2-4
   name: 商户通知列表系统通知详情
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/detail
   method: get
   data:
@@ -225,6 +272,7 @@
 -
   num: 2-5
   name: 商户通知列表系统通知删除
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify
   method: delete
   data:
@@ -239,6 +287,7 @@
 -
   num: 2-6
   name: 商户通知按区域发布图片营销通知
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/push-notify
   method: post
   data:
@@ -257,6 +306,7 @@
 -
   num: 2-7
   name: 商户通知获取列表数据
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -267,6 +317,7 @@
 -
   num: 2-8
   name: 商户通知列表营销通知数据查询
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -286,6 +337,7 @@
 -
   num: 2-9
   name: 商户通知列表营销通知详情
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/detail
   method: get
   data:
@@ -300,6 +352,7 @@
 -
   num: 2-10
   name: 商户通知列表营销通知删除
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify
   method: delete
   data:
@@ -314,6 +367,7 @@
 -
   num: 2-11
   name: 商户通知精准发布文本运营规则通知
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/push-notify
   method: post
   data:
@@ -333,6 +387,7 @@
 -
   num: 2-12
   name: 商户通知获取列表数据
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -343,6 +398,7 @@
 -
   num: 2-13
   name: 商户通知列表运营规则通知数据查询
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -362,6 +418,7 @@
 -
   num: 2-14
   name: 商户通知列表运营规则通知详情
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/detail
   method: get
   data:
@@ -376,6 +433,7 @@
 -
   num: 2-15
   name: 商户通知列表运营规则通知删除
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify
   method: delete
   data:
@@ -390,6 +448,7 @@
 -
   num: 2-16
   name: 商户通知区域发布图片其他通知
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/push-notify
   method: post
   data:
@@ -406,6 +465,7 @@
 -
   num: 2-17
   name: 商户通知获取列表数据
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -416,6 +476,7 @@
 -
   num: 2-18
   name: 商户通知列表其他通知数据查询
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -435,6 +496,7 @@
 -
   num: 2-19
   name: 商户通知列表其他通知详情
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify/detail
   method: get
   data:
@@ -449,6 +511,7 @@
 -
   num: 2-20
   name: 商户通知列表其他通知删除
+  execute: n
   url: /rent-api/merchant/platform/merchant-notify
   method: delete
   data:
@@ -466,6 +529,7 @@
 -
   num: 3-1
   name: 车型管理新增车型
+  execute: y
   url: /rent-api/bike/platform/bike-model
   method: post
   data:
@@ -480,6 +544,7 @@
 -
   num: 3-2
   name: 车型管理列表
+  execute: y
   url: /rent-api/bike/platform/bike-model/list
   method: get
   data:
@@ -490,6 +555,7 @@
 -
   num: 3-3
   name: 车型管理编辑车型
+  execute: y
   url: /rent-api/bike/platform/bike-model
   method: put
   data:
@@ -510,12 +576,13 @@
 -
   num: 3-4
   name: 车型管理删除车型
+  execute: y
   url: /rent-api/bike/platform/bike-model
   method: delete
   data:
   asserts: 成功
   depends: y
-  depends_site: url
+  depends_site:
   depends_type: str
   depends_key:
     - id
@@ -524,6 +591,7 @@
 -
   num: 3-5
   name: 车型管理再次新增车型
+  execute: y
   url: /rent-api/bike/platform/bike-model
   method: post
   data:
@@ -538,6 +606,7 @@
 -
   num: 3-6
   name: 车型管理列表再次获取
+  execute: y
   url: /rent-api/bike/platform/bike-model/list
   method: get
   data:
@@ -548,3 +617,262 @@
 #############################
 # 4、车辆管理-车辆列表       #
 #############################
+-
+  num: 4-1
+  name: 获取车辆编号
+  execute: y
+  url: /rent-api/bike/platform/bike/list-enable-factory-bike-no
+  method: get
+  data:
+    bikeNo: 3009
+  asserts: 成功
+  depends: n
+-
+  num: 4-2
+  name: 获取车型
+  execute: y
+  url: /rent-api/bike/platform/bike-model/bike-model-dropdown-list
+  method: get
+  data:
+  asserts: 成功
+  depends: n
+-
+  num: 4-3
+  name: 车辆列表新增车辆
+  execute: y
+  url: /rent-api/bike/platform/bike/
+  method: post
+  data:
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - bikeNo
+    - modelId
+    - merchantNo
+    - modelName
+    - merchantId
+    - merchantName
+  depends_value:
+    - 4-1.data.0
+    - 4-2.data.0.id
+    - 1-11.data.list.0.merchantNo
+    - 4-2.data.0.name
+    - 1-11.data.list.0.id
+    - 1-11.data.list.0.name
+-
+  num: 4-4
+  name: 获取车辆列表全部数据
+  execute: y
+  url: /rent-api/bike/platform/bike/list?page=7&pageSize=10
+  method: get
+  data:
+    page: 1
+    pageSize: 100000000
+  asserts: 成功
+  depends: n
+-
+  num: 4-5
+  name: 车辆列表查询
+  execute: y
+  url: /rent-api/bike/platform/bike/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - bikeNo
+    - frameNo
+    - modelId
+    - merchantNo
+    - operationStatus
+  depends_value:
+    - 4-4.data.list.-1.bikeNo
+    - 4-4.data.list.-1.frameNo
+    - 4-4.data.list.-1.modelId
+    - 4-4.data.list.-1.merchantNo
+    - 4-4.data.list.-1.operationStatus
+-
+  num: 4-6
+  name: 车辆列表详情
+  execute: y
+  url: /rent-api/bike/platform/bike/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-7
+  name: 车辆列表详情获取车辆控制信息（中控）
+  execute: y
+  url: /rent-api/bike/platform/bike/terminal-info
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-8
+  name: 车辆列表详情停用车辆
+  execute: y
+  url: /rent-api/bike/platform/bike/update-state
+  method: put
+  data:
+    status: 3
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-9
+  name: 车辆列表详情启用车辆
+  execute: y
+  url: /rent-api/bike/platform/bike/update-state
+  method: put
+  data:
+    status: 0
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-10
+  name: 车辆列表详情编辑车辆（前端数据回显有bug，暂不调试）
+  execute: n
+  url: /rent-api/bike/platform/bike
+  method: put
+  data:
+    bikeNo: "3001000"
+    modelId: 492
+    merchantNo: "10000042"
+    modelName: "乐迪G5 MAX"
+    merchantId: 211
+    merchantName: "API-test1"
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-11
+  name: 车辆列表详情车辆控制-关闭车锁（暂不调试）
+  execute: n
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 1
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-12
+  name: 车辆列表详情车辆控制-打开车锁（暂不调试）
+  execute: n
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 2
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-13
+  name: 车辆列表详情车辆控制-关闭电池锁（暂不调试）
+  execute: n
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 3
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-14
+  name: 车辆列表详情车辆控制-打开电池锁（暂不调试）
+  execute: n
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 4
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-15
+  name: 车辆列表详情车辆控制-关闭轮锁（暂不调试）
+  execute: n
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 5
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-16
+  name: 车辆列表详情车辆控制-打开轮锁（暂不调试）
+  execute: n
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 6
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id

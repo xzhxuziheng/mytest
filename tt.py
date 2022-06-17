@@ -18,6 +18,5 @@
 #    code: 930619
 #  asserts: '成功'
 
-li = [1, 2, 3, 4, 5]
-print(li[-1])
-print(type(-1))
+a = 'wWe'
+print(a.upper())
