@@ -1,7 +1,0 @@
-INFO     web_testcase.api.test_all_api:test_all_api.py:36 测试接口：4-7车辆列表详情获取车辆控制信息（中控）
-INFO     web_testcase.api.test_all_api:test_all_api.py:75 我是depends_data：{'id': 130}
-INFO     web_testcase.api.test_all_api:test_all_api.py:76 我是depends_data类型：<class 'dict'>
-INFO     web_testcase.api.test_all_api:test_all_api.py:93 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoxOX0.bNz7QG-JDGYs5ZLUuGCeQcmshFETdTCdOu-6Rkmvapo'}
-INFO     web_testcase.api.test_all_api:test_all_api.py:94 请求路径：https://test.rent.ledear.cn/rent-api/bike/platform/bike/terminal-info?id=130
-INFO     web_testcase.api.test_all_api:test_all_api.py:99 请求参数：None
-INFO     web_testcase.api.test_all_api:test_all_api.py:100 响应结果：{'code': '00000', 'message': '成功', 'data': {'operationStatus': 0}}

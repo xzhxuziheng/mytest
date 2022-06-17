@@ -19,4 +19,4 @@
 #  asserts: '成功'
 
 a = 'wWe'
-print(a.upper())
+print(a[-1].upper())

@@ -1,1 +1,0 @@
-INFO     web_testcase.api.test_all_api:test_all_api.py:102 接口不执行：2-9商户通知列表营销通知详情

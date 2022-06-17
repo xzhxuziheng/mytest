@@ -1,7 +1,0 @@
-INFO     web_testcase.api.test_all_api:test_all_api.py:36 测试接口：4-8车辆列表详情停用车辆
-INFO     web_testcase.api.test_all_api:test_all_api.py:75 我是depends_data：{'id': 130}
-INFO     web_testcase.api.test_all_api:test_all_api.py:76 我是depends_data类型：<class 'dict'>
-INFO     web_testcase.api.test_all_api:test_all_api.py:93 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoxOX0.bNz7QG-JDGYs5ZLUuGCeQcmshFETdTCdOu-6Rkmvapo', 'Content-Length': '13'}
-INFO     web_testcase.api.test_all_api:test_all_api.py:94 请求路径：https://test.rent.ledear.cn/rent-api/bike/platform/bike/update-state?id=130
-INFO     web_testcase.api.test_all_api:test_all_api.py:97 请求参数：{"status": 3}
-INFO     web_testcase.api.test_all_api:test_all_api.py:100 响应结果：{'code': '00000', 'message': '成功'}

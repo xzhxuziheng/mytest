@@ -17,7 +17,7 @@ class TestAllApi:
 
     @pytest.mark.parametrize('caseinfo', yaml_util.read_yaml('/web_testcase/case/all_api.yaml'))
     def test_all_api(self, caseinfo):
-        execute = str(caseinfo['execute']).upper()
+        execute = str(caseinfo['execute'])[-1].upper()
         # 用例是否执行
         if execute == 'Y':
             # logger.info('请求参数：%s' % caseinfo)

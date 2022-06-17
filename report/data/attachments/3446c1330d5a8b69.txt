@@ -1,1 +1,0 @@
-INFO     web_testcase.api.test_all_api:test_all_api.py:102 接口不执行：2-13商户通知列表运营规则通知数据查询

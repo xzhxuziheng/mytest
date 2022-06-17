@@ -4,7 +4,7 @@
 -
   num: 1-1
   name: 新增商户
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant
   method: post
   data:
@@ -31,7 +31,7 @@
 -
   num: 1-2
   name: 商户列表获取数据
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/list
   method: get
   data:
@@ -42,7 +42,7 @@
 -
   num: 1-3
   name: 商户列表查询
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/list
   method: get
   data:
@@ -65,7 +65,7 @@
 -
   num: 1-4
   name: 查看商户详情
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/merchant-detail
   method: get
   data:
@@ -80,7 +80,7 @@
 -
   num: 1-5
   name: 商户详情停运商户
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/update-status
   method: put
   data:
@@ -96,7 +96,7 @@
 -
   num: 1-6
   name: 商户详情开启商户
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/update-status
   method: put
   data:
@@ -112,7 +112,7 @@
 -
   num: 1-7
   name: 商户详情修改经营信息
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/base-info
   method: put
   data:
@@ -135,7 +135,7 @@
 -
   num: 1-8
   name: 商户详情修改分账信息
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/bill-info
   method: put
   data:
@@ -153,7 +153,7 @@
 -
   num: 1-9
   name: 商户详情修改营业位置
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/region-info
   method: put
   data:
@@ -175,7 +175,7 @@
 -
   num: 1-10
   name: 商户列表再次获取数据
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/list
   method: get
   data:
@@ -186,7 +186,7 @@
 -
   num: 1-11
   name: 商户列表再次查询
-  execute: y
+  execute: 1-y
   url: /rent-api/merchant/platform/merchant/list
   method: get
   data:
@@ -212,7 +212,7 @@
 -
   num: 2-1
   name: 商户通知全部商户发布文本系统通知
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/push-notify
   method: post
   data:
@@ -226,7 +226,7 @@
 -
   num: 2-2
   name: 商户通知获取列表数据
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -237,7 +237,7 @@
 -
   num: 2-3
   name: 商户通知列表系统通知数据查询
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -257,7 +257,7 @@
 -
   num: 2-4
   name: 商户通知列表系统通知详情
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/detail
   method: get
   data:
@@ -272,7 +272,7 @@
 -
   num: 2-5
   name: 商户通知列表系统通知删除
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify
   method: delete
   data:
@@ -287,7 +287,7 @@
 -
   num: 2-6
   name: 商户通知按区域发布图片营销通知
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/push-notify
   method: post
   data:
@@ -306,7 +306,7 @@
 -
   num: 2-7
   name: 商户通知获取列表数据
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -317,7 +317,7 @@
 -
   num: 2-8
   name: 商户通知列表营销通知数据查询
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -337,7 +337,7 @@
 -
   num: 2-9
   name: 商户通知列表营销通知详情
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/detail
   method: get
   data:
@@ -352,7 +352,7 @@
 -
   num: 2-10
   name: 商户通知列表营销通知删除
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify
   method: delete
   data:
@@ -367,7 +367,7 @@
 -
   num: 2-11
   name: 商户通知精准发布文本运营规则通知
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/push-notify
   method: post
   data:
@@ -387,7 +387,7 @@
 -
   num: 2-12
   name: 商户通知获取列表数据
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -398,7 +398,7 @@
 -
   num: 2-13
   name: 商户通知列表运营规则通知数据查询
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -418,7 +418,7 @@
 -
   num: 2-14
   name: 商户通知列表运营规则通知详情
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/detail
   method: get
   data:
@@ -433,7 +433,7 @@
 -
   num: 2-15
   name: 商户通知列表运营规则通知删除
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify
   method: delete
   data:
@@ -448,7 +448,7 @@
 -
   num: 2-16
   name: 商户通知区域发布图片其他通知
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/push-notify
   method: post
   data:
@@ -465,7 +465,7 @@
 -
   num: 2-17
   name: 商户通知获取列表数据
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -476,7 +476,7 @@
 -
   num: 2-18
   name: 商户通知列表其他通知数据查询
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/list
   method: get
   data:
@@ -496,7 +496,7 @@
 -
   num: 2-19
   name: 商户通知列表其他通知详情
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify/detail
   method: get
   data:
@@ -511,7 +511,7 @@
 -
   num: 2-20
   name: 商户通知列表其他通知删除
-  execute: n
+  execute: 2-y
   url: /rent-api/merchant/platform/merchant-notify
   method: delete
   data:
@@ -529,7 +529,7 @@
 -
   num: 3-1
   name: 车型管理新增车型
-  execute: y
+  execute: 3-y
   url: /rent-api/bike/platform/bike-model
   method: post
   data:
@@ -544,7 +544,7 @@
 -
   num: 3-2
   name: 车型管理列表
-  execute: y
+  execute: 3-y
   url: /rent-api/bike/platform/bike-model/list
   method: get
   data:
@@ -555,7 +555,7 @@
 -
   num: 3-3
   name: 车型管理编辑车型
-  execute: y
+  execute: 3-y
   url: /rent-api/bike/platform/bike-model
   method: put
   data:
@@ -576,7 +576,7 @@
 -
   num: 3-4
   name: 车型管理删除车型
-  execute: y
+  execute: 3-y
   url: /rent-api/bike/platform/bike-model
   method: delete
   data:
@@ -591,7 +591,7 @@
 -
   num: 3-5
   name: 车型管理再次新增车型
-  execute: y
+  execute: 3-y
   url: /rent-api/bike/platform/bike-model
   method: post
   data:
@@ -606,7 +606,7 @@
 -
   num: 3-6
   name: 车型管理列表再次获取
-  execute: y
+  execute: 3-y
   url: /rent-api/bike/platform/bike-model/list
   method: get
   data:
@@ -620,7 +620,7 @@
 -
   num: 4-1
   name: 获取车辆编号
-  execute: y
+  execute: 4-y
   url: /rent-api/bike/platform/bike/list-enable-factory-bike-no
   method: get
   data:
@@ -630,7 +630,7 @@
 -
   num: 4-2
   name: 获取车型
-  execute: y
+  execute: 4-y
   url: /rent-api/bike/platform/bike-model/bike-model-dropdown-list
   method: get
   data:
@@ -639,7 +639,7 @@
 -
   num: 4-3
   name: 车辆列表新增车辆
-  execute: y
+  execute: 4-y
   url: /rent-api/bike/platform/bike/
   method: post
   data:
@@ -664,7 +664,7 @@
 -
   num: 4-4
   name: 获取车辆列表全部数据
-  execute: y
+  execute: 4-y
   url: /rent-api/bike/platform/bike/list?page=7&pageSize=10
   method: get
   data:
@@ -675,7 +675,7 @@
 -
   num: 4-5
   name: 车辆列表查询
-  execute: y
+  execute: 4-y
   url: /rent-api/bike/platform/bike/list
   method: get
   data:
@@ -700,7 +700,7 @@
 -
   num: 4-6
   name: 车辆列表详情
-  execute: y
+  execute: 4-y
   url: /rent-api/bike/platform/bike/detail
   method: get
   data:
@@ -715,7 +715,7 @@
 -
   num: 4-7
   name: 车辆列表详情获取车辆控制信息（中控）
-  execute: y
+  execute: 4-y
   url: /rent-api/bike/platform/bike/terminal-info
   method: get
   data:
@@ -730,7 +730,7 @@
 -
   num: 4-8
   name: 车辆列表详情停用车辆
-  execute: y
+  execute: 4-y
   url: /rent-api/bike/platform/bike/update-state
   method: put
   data:
@@ -746,7 +746,7 @@
 -
   num: 4-9
   name: 车辆列表详情启用车辆
-  execute: y
+  execute: 4-y
   url: /rent-api/bike/platform/bike/update-state
   method: put
   data:
@@ -762,7 +762,7 @@
 -
   num: 4-10
   name: 车辆列表详情编辑车辆（前端数据回显有bug，暂不调试）
-  execute: n
+  execute: 4-n
   url: /rent-api/bike/platform/bike
   method: put
   data:
@@ -783,7 +783,7 @@
 -
   num: 4-11
   name: 车辆列表详情车辆控制-关闭车锁（暂不调试）
-  execute: n
+  execute: 4-n
   url: /rent-api/bike/platform/bike/send-command
   method: post
   data:
@@ -799,7 +799,7 @@
 -
   num: 4-12
   name: 车辆列表详情车辆控制-打开车锁（暂不调试）
-  execute: n
+  execute: 4-n
   url: /rent-api/bike/platform/bike/send-command
   method: post
   data:
@@ -815,7 +815,7 @@
 -
   num: 4-13
   name: 车辆列表详情车辆控制-关闭电池锁（暂不调试）
-  execute: n
+  execute: 4-n
   url: /rent-api/bike/platform/bike/send-command
   method: post
   data:
@@ -831,7 +831,7 @@
 -
   num: 4-14
   name: 车辆列表详情车辆控制-打开电池锁（暂不调试）
-  execute: n
+  execute: 4-n
   url: /rent-api/bike/platform/bike/send-command
   method: post
   data:
@@ -847,7 +847,7 @@
 -
   num: 4-15
   name: 车辆列表详情车辆控制-关闭轮锁（暂不调试）
-  execute: n
+  execute: 4-n
   url: /rent-api/bike/platform/bike/send-command
   method: post
   data:
@@ -863,7 +863,7 @@
 -
   num: 4-16
   name: 车辆列表详情车辆控制-打开轮锁（暂不调试）
-  execute: n
+  execute: 4-n
   url: /rent-api/bike/platform/bike/send-command
   method: post
   data:
