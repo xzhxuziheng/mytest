@@ -1,0 +1,1 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:73 测试接口：4-9车辆列表详情启用车辆

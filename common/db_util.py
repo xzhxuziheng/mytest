@@ -32,7 +32,10 @@ def handle_mysql(sql):
     cur = conn.cursor()
     for sql_data in sql:
         cur.execute(sql_data)
-        conn.commit()
+        try:
+            conn.commit()
+        except:
+            conn.rollback()
     conn.close()
 
 
@@ -45,5 +48,5 @@ if __name__ == '__main__':
     #     'delete from merchant where name = "API-test1"'
     # ]
     # handle_mysql(s)
-    s = yaml_util.read_yaml('/web_testcase/case/mysql.yaml')['delete']
+    s = yaml_util.read_yaml('/all_testcase/case/mysql.yaml')['delete']
     handle_mysql(s)

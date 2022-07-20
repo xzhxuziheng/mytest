@@ -1,0 +1,5 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:73 测试接口：0-1-12厂测小程序获取车辆绑定中控信息
+INFO     all_testcase.api.test_all_api:test_all_api.py:139 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '4', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6NCwic291cmNlX2lkIjoyOH0.3YdNyEdeik3t2GLYXZUXgQ5IgdgtWwfoh3ijIK8g7Q8'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:140 请求路径：https://dev.rent.ledear.cn:28000/rent-api/factory/factory-user/bike?bikeNo=90100001
+INFO     all_testcase.api.test_all_api:test_all_api.py:145 请求参数：None
+INFO     all_testcase.api.test_all_api:test_all_api.py:146 响应结果：{'code': '00000', 'message': '成功', 'data': {'bikeNo': '90100001', 'terminalType': 2, 'terminalNo': '90112345'}}

@@ -21,5 +21,5 @@ def fromCsvToJson(csv_path):
         return profileList
 
 if __name__ == '__main__':
-    print(fromCsvToJson('/web_testcase/case/csv_data/orderPlatformRideList.csv'))
-    a = '/web_testcase/case/orderPlatformRideList.yaml'
+    print(fromCsvToJson('/all_testcase/case/csv_data/orderPlatformRideList.csv'))
+    a = '/all_testcase/case/orderPlatformRideList.yaml'

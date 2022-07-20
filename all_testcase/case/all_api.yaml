@@ -1,0 +1,1217 @@
+#############################
+# 1、厂测-厂测列表           #
+#############################
+-
+  num: 0-1-1
+  name: 获取编号前缀
+  execute: 0-1-y
+  token_source: admin
+  url: /rent-api/factory/factory-platform/number-segment/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    numberPrefix: 901
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-2
+  name: 厂测列表生成编号
+  execute: 0-1-y
+  token_source: admin
+  url: /rent-api/factory/factory-platform/number-segment/generate
+  method: post
+  data:
+    generateCount: '1'
+    qrCodeRule: 'https://www.ledear.com?bikeNo=${bikeNo}'
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - numberSegmentId
+  depends_value:
+    - 0-1-1.data.list.0.id
+-
+  num: 0-1-3
+  name: 厂测列表查询(车辆编号、关联状态)
+  execute: 0-1-y
+  token_source: admin
+  url: /rent-api/factory/factory/platform/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    bikeNo: 901
+    boundStatus: -1
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-4
+  name: 厂测小程序车辆绑定中控
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/factory/factory-user/bike/bind
+  method: put
+  data:
+    bikeNo: '90100001'
+    terminalNo: '90112345'
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-5
+  name: 厂测小程序获取中控
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/factory/factory-user/bike/terminal
+  method: get
+  data:
+    terminalNo: 90112345
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-6
+  name: 厂测小程序网络开电池锁
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 2
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-7
+  name: 厂测小程序网络开锁
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 0
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-8
+  name: 厂测小程序网络关锁
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 1
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-9
+  name: 厂测小程序网络寻车
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 7
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-10
+  name: 厂测小程序网络撤防
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 12
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-11
+  name: 厂测小程序网络重启中控
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 13
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-12
+  name: 厂测小程序获取车辆绑定中控信息
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/factory/factory-user/bike
+  method: get
+  data:
+    bikeNo: 90100001
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-13
+  name: 厂测小程序获取车辆绑定中控网络开电池锁
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 2
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-14
+  name: 厂测小程序获取车辆绑定中控网络开锁
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 0
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-15
+  name: 厂测小程序获取车辆绑定中控网络关锁
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 1
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-16
+  name: 厂测小程序获取车辆绑定中控网络寻车
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 7
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-17
+  name: 厂测小程序获取车辆绑定中控网络撤防
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 12
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-18
+  name: 厂测小程序获取车辆绑定中控网络重启中控
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/bike/factory-user/bike/send-command
+  method: get
+  data:
+    terminalNo: 90112345
+    bikeCommandType: 13
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-19
+  name: 厂测小程序解绑中控
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/factory/factory-user/bike/unbind
+  method: put
+  data:
+    bikeNo: '90100001'
+    reason: '中控损坏'
+    remark: 'API解绑中控'
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-20
+  name: 厂测小程序车辆再次绑定中控
+  execute: 0-1-y
+  token_source: factory_wx_mini
+  url: /rent-api/factory/factory-user/bike/bind
+  method: put
+  data:
+    bikeNo: '90100001'
+    terminalNo: '90112345'
+  asserts: 成功
+  depends: n
+-
+  num: 0-1-21
+  name: 厂测列表生编辑
+  execute: 0-1-y
+  token_source: admin
+  url: /rent-api/factory/factory/platform
+  method: put
+  data:
+    terminalType: 2
+    terminalNo: '90112345'
+    frameNo: '90198765'
+    motorNo: '90156789'
+  asserts: 成功
+  depends: y
+  depends_site: url_and_body
+  depends_type: str
+  depends_url_key:
+    - factoryBikeId
+  depends_url_value:
+    - 0-1-3.data.list.0.id
+  depends_body_key:
+    - bikeNo
+  depends_body_value:
+    - 0-1-3.data.list.0.bikeNo
+
+#############################
+# 1、商户管理-商户列表        #
+#############################
+-
+  num: 1-1
+  name: 新增商户
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant
+  method: post
+  data:
+    name: API-test
+    linkMan: API
+    linkPhone: 19180939001
+    operateCycle: 2
+    deposit: 999999
+    imgUrl: merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg
+    operateStartTime: '09:00'
+    operateEndTime: '22:00'
+    percentage: 99.99
+    memberNo: 'ld32207191747475729'
+    memberName: 'API通联'
+    province: 四川省
+    city: 成都市
+    area: 武侯区
+    position:
+      lon: 104.04446
+      lat: 30.557735
+    address: 四川省成都市武侯区石羊街道因材施教教育(高新大源校区)清凤时代城
+  asserts: 成功
+  depends: n
+-
+  num: 1-2
+  name: 商户列表获取数据
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 1-3
+  name: 商户列表查询
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - merchantNo
+    - name
+    - phone
+    - state
+  depends_value:
+    - 1-2.data.list.0.merchantNo
+    - 1-2.data.list.0.name
+    - 1-2.data.list.0.linkPhone
+    - 1-2.data.list.0.state
+-
+  num: 1-4
+  name: 查看商户详情
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/merchant-detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 1-3.data.list.0.id
+-
+  num: 1-5
+  name: 商户详情停运商户
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/update-status
+  method: put
+  data:
+    status: 0
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 1-3.data.list.0.id
+-
+  num: 1-6
+  name: 商户详情开启商户
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/update-status
+  method: put
+  data:
+    status: 1
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 1-3.data.list.0.id
+-
+  num: 1-7
+  name: 商户详情修改经营信息
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/base-info
+  method: put
+  data:
+    name: API-test1
+    linkMan: API1
+    linkPhone: 19180939002
+    operateCycle: 1
+    deposit: 1000001
+    imgUrl: merchant/merchant/img/1b455211-c5e5-4ba0-b3c4-8336bd754ee8.jpg
+    operateStartTime: '09:30'
+    operateEndTime: '22:30'
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 1-3.data.list.0.id
+-
+  num: 1-8
+  name: 商户详情修改分账信息
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/bill-info
+  method: put
+  data:
+    memberNo: "ld32207191809184216"
+    memberName: "API更换通联"
+    percentage: "100.00"
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 1-3.data.list.0.id
+-
+  num: 1-9
+  name: 商户详情修改营业位置
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/region-info
+  method: put
+  data:
+    address: "四川省成都市武侯区石羊街道剑南大道中段成都高新技术产业开发区(南区)"
+    area: "武侯区"
+    city: "成都市"
+    position:
+      lon: "104.046356"
+      lat: "30.549605"
+    province: "四川省"
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 1-3.data.list.0.id
+-
+  num: 1-10
+  name: 商户列表再次获取数据
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 1-11
+  name: 商户列表再次查询
+  execute: 1-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - merchantNo
+    - name
+    - phone
+    - state
+  depends_value:
+    - 1-10.data.list.0.merchantNo
+    - 1-10.data.list.0.name
+    - 1-10.data.list.0.linkPhone
+    - 1-10.data.list.0.state
+#############################
+# 2、商户管理-商户通知        #
+#############################
+-
+  num: 2-1
+  name: 商户通知全部商户发布文本系统通知
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/push-notify
+  method: post
+  data:
+    title: "这是一个API全部商户文本系统通知"
+    notifyType: 1
+    contentType: 1
+    pushRange: 1
+    content: "这是一个API文本内容"
+  asserts: 成功
+  depends: n
+-
+  num: 2-2
+  name: 商户通知获取列表数据
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 2-3
+  name: 商户通知列表系统通知数据查询
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    operatorId: 28
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - title
+    - notifyType
+  depends_value:
+    - 2-2.data.list.0.title
+    - 2-2.data.list.0.notifyType
+-
+  num: 2-4
+  name: 商户通知列表系统通知详情
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-3.data.list.0.id
+-
+  num: 2-5
+  name: 商户通知列表系统通知删除
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-3.data.list.0.id
+-
+  num: 2-6
+  name: 商户通知按区域发布图片营销通知
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/push-notify
+  method: post
+  data:
+    title: "这是一个API区域商户图片营销通知"
+    notifyType: 2
+    contentType: 2
+    pushRange: 2
+    imgUrl: "merchant/merchant_notify/img/0bc1b567-09cf-455a-81a9-0f4381d65d88.jpg"
+    regionList:
+      -
+        province: "四川省"
+        city: "成都市"
+        area: "武侯区"
+  asserts: 成功
+  depends: n
+-
+  num: 2-7
+  name: 商户通知获取列表数据
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 2-8
+  name: 商户通知列表营销通知数据查询
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    operatorId: 28
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - title
+    - notifyType
+  depends_value:
+    - 2-7.data.list.0.title
+    - 2-7.data.list.0.notifyType
+-
+  num: 2-9
+  name: 商户通知列表营销通知详情
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-8.data.list.0.id
+-
+  num: 2-10
+  name: 商户通知列表营销通知删除
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-8.data.list.0.id
+-
+  num: 2-11
+  name: 商户通知精准发布文本运营规则通知
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/push-notify
+  method: post
+  data:
+    title: "这是一个API精准商户文本运营规则通知"
+    notifyType: 3
+    contentType: 1
+    pushRange: 3
+    content: "这是一个API文本内容\n这\n是一\n个API\n文本内容"
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: list
+  depends_key:
+    - merchantList
+  depends_value:
+    - 1-3.data.list.0.id
+-
+  num: 2-12
+  name: 商户通知获取列表数据
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 2-13
+  name: 商户通知列表运营规则通知数据查询
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    operatorId: 28
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - title
+    - notifyType
+  depends_value:
+    - 2-12.data.list.0.title
+    - 2-12.data.list.0.notifyType
+-
+  num: 2-14
+  name: 商户通知列表运营规则通知详情
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-13.data.list.0.id
+-
+  num: 2-15
+  name: 商户通知列表运营规则通知删除
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-13.data.list.0.id
+-
+  num: 2-16
+  name: 商户通知区域发布图片其他通知
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/push-notify
+  method: post
+  data:
+    title: "这是一个API区域商户图片其他通知"
+    notifyType: 4
+    contentType: 2
+    pushRange: 2
+    imgUrl: "merchant/merchant_notify/img/894ee202-ac2a-4a8c-a541-962b54238956.jpg"
+    regionList:
+      -
+        province: "四川省"
+  asserts: 成功
+  depends: n
+-
+  num: 2-17
+  name: 商户通知获取列表数据
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 2-18
+  name: 商户通知列表其他通知数据查询
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+    operatorId: 28
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - title
+    - notifyType
+  depends_value:
+    - 2-17.data.list.0.title
+    - 2-17.data.list.0.notifyType
+-
+  num: 2-19
+  name: 商户通知列表其他通知详情
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-18.data.list.0.id
+-
+  num: 2-20
+  name: 商户通知列表其他通知删除
+  execute: 2-y
+  token_source: admin
+  url: /rent-api/merchant/platform/merchant-notify
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - notifyId
+  depends_value:
+    - 2-18.data.list.0.id
+#############################
+# 3、车辆管理-车型管理        #
+#############################
+-
+  num: 3-1
+  name: 车型管理新增车型
+  execute: 3-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike-model
+  method: post
+  data:
+    name: "API测试车型"
+    description: "这是一个API测试车型，接口自动化专用"
+    deposit: 0
+    defaultRent: 999
+    depositAmount: 99900
+    picturePath: "bike/bikeModel/img/a160dbd6-c8f3-4735-85c7-7b85b1a05d35.png"
+  asserts: 成功
+  depends: n
+-
+  num: 3-2
+  name: 车型管理列表
+  execute: 3-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike-model/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+-
+  num: 3-3
+  name: 车型管理编辑车型
+  execute: 3-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike-model
+  method: put
+  data:
+    name: "API测试车型编辑"
+    description: "这是一个API测试车型，接口自动化专用，编辑后的车型介绍"
+    deposit: 1
+    defaultRent: 1000
+    depositAmount: 1000000
+    picturePath: "bike/bikeModel/img/c074bf51-ca14-4a15-8e5a-99bc12e537d1.png"
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 3-2.data.list.-1.id
+-
+  num: 3-4
+  name: 车型管理删除车型
+  execute: 3-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike-model
+  method: delete
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 3-2.data.list.-1.id
+-
+  num: 3-5
+  name: 车型管理再次新增车型
+  execute: 3-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike-model
+  method: post
+  data:
+    name: "API测试车型"
+    description: "这是一个API测试车型，接口自动化专用"
+    deposit: 0
+    defaultRent: 999
+    depositAmount: 99900
+    picturePath: "bike/bikeModel/img/a160dbd6-c8f3-4735-85c7-7b85b1a05d35.png"
+  asserts: 成功
+  depends: n
+-
+  num: 3-6
+  name: 车型管理列表再次获取
+  execute: 3-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike-model/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: n
+#############################
+# 4、车辆管理-车辆列表       #
+#############################
+-
+  num: 4-1
+  name: 获取车辆编号
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike/list-enable-factory-bike-no
+  method: get
+  data:
+    bikeNo: 3
+  asserts: 成功
+  depends: n
+-
+  num: 4-2
+  name: 获取车型
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike-model/bike-model-dropdown-list
+  method: get
+  data:
+  asserts: 成功
+  depends: n
+-
+  num: 4-2-1
+  name: 获取电池方案
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/battery-plan/down-box
+  method: get
+  data:
+  asserts: 成功
+  depends: n
+-
+  num: 4-3
+  name: 车辆列表新增车辆
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike/
+  method: post
+  data:
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - bikeNo
+    - modelId
+    - merchantNo
+    - modelName
+    - merchantId
+    - merchantName
+  depends_value:
+    - 4-1.data.0
+    - 4-2.data.0.id
+    - 1-11.data.list.0.merchantNo
+    - 4-2.data.0.name
+    - 1-11.data.list.0.id
+    - 1-11.data.list.0.name
+-
+  num: 4-4
+  name: 获取车辆列表全部数据
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike/list?page=7&pageSize=10
+  method: get
+  data:
+    page: 1
+    pageSize: 100000000
+  asserts: 成功
+  depends: n
+-
+  num: 4-5
+  name: 车辆列表查询
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike/list
+  method: get
+  data:
+    page: 1
+    pageSize: 10
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - bikeNo
+    - frameNo
+    - modelId
+    - merchantNo
+    - operationStatus
+  depends_value:
+    - 4-4.data.list.-1.bikeNo
+    - 4-4.data.list.-1.frameNo
+    - 4-4.data.list.-1.modelId
+    - 4-4.data.list.-1.merchantNo
+    - 4-4.data.list.-1.operationStatus
+-
+  num: 4-6
+  name: 车辆列表详情
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike/detail
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-7
+  name: 车辆列表详情获取车辆控制信息（中控）
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike/terminal-info
+  method: get
+  data:
+  asserts: 成功
+  depends: y
+  depends_site:
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-8
+  name: 车辆列表详情停用车辆
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike/update-state
+  method: put
+  data:
+    status: 3
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-9
+  name: 车辆列表详情启用车辆
+  execute: 4-y
+  token_source: admin
+  url: /rent-api/bike/platform/bike/update-state
+  method: put
+  data:
+    status: 0
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-10
+  name: 车辆列表详情编辑车辆（前端数据回显有bug，暂不调试）
+  execute: 4-n
+  token_source: admin
+  url: /rent-api/bike/platform/bike
+  method: put
+  data:
+    bikeNo: "3001000"
+    modelId: 492
+    merchantNo: "10000042"
+    modelName: "乐迪G5 MAX"
+    merchantId: 211
+    merchantName: "API-test1"
+  asserts: 成功
+  depends: y
+  depends_site: url
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-11
+  name: 车辆列表详情车辆控制-关闭车锁（暂不调试）
+  execute: 4-n
+  token_source: admin
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 1
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-12
+  name: 车辆列表详情车辆控制-打开车锁（暂不调试）
+  execute: 4-n
+  token_source: admin
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 2
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-13
+  name: 车辆列表详情车辆控制-关闭电池锁（暂不调试）
+  execute: 4-n
+  token_source: admin
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 3
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-14
+  name: 车辆列表详情车辆控制-打开电池锁（暂不调试）
+  execute: 4-n
+  token_source: admin
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 4
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-15
+  name: 车辆列表详情车辆控制-关闭轮锁（暂不调试）
+  execute: 4-n
+  token_source: admin
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 5
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id
+-
+  num: 4-16
+  name: 车辆列表详情车辆控制-打开轮锁（暂不调试）
+  execute: 4-n
+  token_source: admin
+  url: /rent-api/bike/platform/bike/send-command
+  method: post
+  data:
+    bikeCommandTyp: 6
+  asserts: 成功
+  depends: y
+  depends_site: body
+  depends_type: str
+  depends_key:
+    - id
+  depends_value:
+    - 4-5.data.list.0.id

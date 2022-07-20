@@ -1,26 +1,38 @@
 # 乐迪共享测试域名
 #base_url: https://test.bike.ledear.cn
 # 乐迪长租测试域名
-base_url: https://test.rent.ledear.cn
+#base_url: https://test.rent.ledear.cn
+base_url: https://dev.rent.ledear.cn:28000
 header:
-  content-type: application/json
-  source_type: '3'
+  admin:
+    content-type: application/json
+    source_type: '3'
+  factory_wx_mini:
+    content-type: application/json
+    source_type: '4'
 #  area_id: '10'
 login_header:
-  content-type: application/json
-  source_type: '3'
+  admin:
+    content-type: application/json
+    source_type: '3'
+  factory_wx_mini:
+    content-type: application/json
+    source_type: '4'
 log_level: INFO
 handler_log_log_level: INFO
-all_api_yaml: /web_testcase/case/all_api.yaml
+all_api_yaml: /all_testcase/case/all_api.yaml
 
 
 # 数据库连接
-mysql_host: ledear-test-porladb.rwlb.rds.aliyuncs.com
+#mysql_host: ledear-test-porladb.rwlb.rds.aliyuncs.com
+mysql_host: 192.168.0.7
 #host: 162.14.82.120
-mysql_port: 3306
-mysql_user: dba
+mysql_port: 3308
+#mysql_user: dba
+mysql_user: root
 #user: root
-mysql_password: XQiVFQyXLZ^iUWeA
+#mysql_password: XQiVFQyXLZ^iUWeA
+mysql_password: iupward.123
 #password: 123456
 mysql_db: rent
 #db: bookshop

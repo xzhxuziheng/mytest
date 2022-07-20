@@ -1,0 +1,959 @@
+0-1-1:
+  code: '00000'
+  data:
+    list:
+    - id: 727
+      numberPrefix: '901'
+    total: 1
+  message: 成功
+0-1-2:
+  code: '00000'
+  data: https://test.static.ledear.cn/factory/qrCode/%E4%B9%90%E8%BF%AA%E9%95%BF%E7%A7%9F%E8%BD%A6%E8%BE%86%E7%BC%96%E5%8F%B720220720183337680604.xlsx?Expires=1658316818&OSSAccessKeyId=LTAI5tLC3xKWsnzq9jz2fQsL&Signature=FdHonH0bY6dFPpZlat%2BbZ9W89%2Fc%3D
+  message: 成功
+0-1-3:
+  code: '00000'
+  data:
+    list:
+    - bikeNo: '90100001'
+      boundStatus: -1
+      id: 58
+    total: 1
+  message: 成功
+0-1-4:
+  code: '00000'
+  message: 成功
+0-1-5:
+  code: '00000'
+  data:
+    createTime: '2022-07-06 14:27:30'
+    id: 72
+    terminalNo: '90112345'
+    terminalType: 2
+  message: 成功
+0-1-6:
+  code: B0000
+  message: 车辆不在线
+0-1-7:
+  code: B0000
+  message: 车辆不在线
+0-1-8:
+  code: B0000
+  message: 车辆不在线
+0-1-9:
+  code: B0000
+  message: 车辆不在线
+0-1-10:
+  code: B0000
+  message: 车辆不在线
+0-1-11:
+  code: B0000
+  message: 车辆不在线
+0-1-12:
+  code: '00000'
+  data:
+    bikeNo: '90100001'
+    terminalNo: '90112345'
+    terminalType: 2
+  message: 成功
+0-1-13:
+  code: B0000
+  message: 车辆不在线
+0-1-14:
+  code: B0000
+  message: 车辆不在线
+0-1-15:
+  code: B0000
+  message: 车辆不在线
+0-1-16:
+  code: B0000
+  message: 车辆不在线
+0-1-17:
+  code: B0000
+  message: 车辆不在线
+0-1-18:
+  code: B0000
+  message: 车辆不在线
+0-1-19:
+  code: '00000'
+  message: 成功
+0-1-20:
+  code: '00000'
+  message: 成功
+0-1-21:
+  code: '00000'
+  message: 成功
+1-1:
+  code: '00000'
+  message: 成功
+1-2:
+  code: '00000'
+  data:
+    list:
+    - bikeNum: 0
+      id: 86
+      linkPhone: '19180939001'
+      merchantNo: '10000063'
+      name: API-test
+      state: 1
+    - bikeNum: 1
+      id: 77
+      linkPhone: '19180930619'
+      merchantNo: '10000054'
+      name: 乐迪租车平台测试商户
+      state: 1
+    - bikeNum: 3
+      id: 76
+      linkPhone: '18869879782'
+      merchantNo: '10000053'
+      name: 云旅租车测试商户
+      state: 1
+    - bikeNum: 1
+      id: 74
+      linkPhone: '18611560222'
+      merchantNo: '10000051'
+      name: 哈哈哈
+      state: 0
+    - bikeNum: 0
+      id: 73
+      linkPhone: '18681691784'
+      merchantNo: '10000050'
+      name: 其他商户
+      state: 0
+    - bikeNum: 1
+      id: 72
+      linkPhone: '19180931001'
+      merchantNo: '10000049'
+      name: 重庆商户
+      state: 0
+    - bikeNum: 4
+      id: 71
+      linkPhone: '13845123698'
+      merchantNo: '10000048'
+      name: xzh商户
+      state: 1
+    total: 7
+  message: 成功
+1-3:
+  code: '00000'
+  data:
+    list:
+    - bikeNum: 0
+      id: 86
+      linkPhone: '19180939001'
+      merchantNo: '10000063'
+      name: API-test
+      state: 1
+    total: 1
+  message: 成功
+1-4:
+  code: '00000'
+  data:
+    address: 四川省成都市武侯区石羊街道因材施教教育(高新大源校区)清凤时代城
+    area: 武侯区
+    bikeModelInfoVoList: []
+    bikeNum: 0
+    bizChanged: false
+    city: 成都市
+    createTime: '2022-07-20 18:33:55'
+    deposit: 999999
+    frozenAmount: 0
+    id: 86
+    imgOssUrl: https://test.static.ledear.cn/merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg?Expires=1658316818&OSSAccessKeyId=LTAI5tLC3xKWsnzq9jz2fQsL&Signature=m2qbm4BuGuKBf%2FyHzeosqa2UQh4%3D
+    imgUrl: merchant/merchant/img/9ebbd463-a64a-4437-9246-f6ed732baf7f.jpg
+    linkMan: API
+    linkPhone: '19180939001'
+    memberName: API通联
+    memberNo: ld32207191747475729
+    merchantNo: '10000063'
+    name: API-test
+    operateCycle: 2
+    operateEndTime: '22:00'
+    operateStartTime: 09:00
+    percentage: 99.99
+    position:
+      lat: 30.557735
+      lon: 104.04446
+    province: 四川省
+    state: 1
+    withdrawalAmount: 0
+  message: 成功
+1-5:
+  code: '00000'
+  message: 成功
+1-6:
+  code: '00000'
+  message: 成功
+1-7:
+  code: '00000'
+  message: 成功
+1-8:
+  code: '00000'
+  message: 成功
+1-9:
+  code: '00000'
+  message: 成功
+1-10:
+  code: '00000'
+  data:
+    list:
+    - bikeNum: 0
+      id: 86
+      linkPhone: '19180939002'
+      merchantNo: '10000063'
+      name: API-test1
+      state: 1
+    - bikeNum: 1
+      id: 77
+      linkPhone: '19180930619'
+      merchantNo: '10000054'
+      name: 乐迪租车平台测试商户
+      state: 1
+    - bikeNum: 3
+      id: 76
+      linkPhone: '18869879782'
+      merchantNo: '10000053'
+      name: 云旅租车测试商户
+      state: 1
+    - bikeNum: 1
+      id: 74
+      linkPhone: '18611560222'
+      merchantNo: '10000051'
+      name: 哈哈哈
+      state: 0
+    - bikeNum: 0
+      id: 73
+      linkPhone: '18681691784'
+      merchantNo: '10000050'
+      name: 其他商户
+      state: 0
+    - bikeNum: 1
+      id: 72
+      linkPhone: '19180931001'
+      merchantNo: '10000049'
+      name: 重庆商户
+      state: 0
+    - bikeNum: 4
+      id: 71
+      linkPhone: '13845123698'
+      merchantNo: '10000048'
+      name: xzh商户
+      state: 1
+    total: 7
+  message: 成功
+1-11:
+  code: '00000'
+  data:
+    list:
+    - bikeNum: 0
+      id: 86
+      linkPhone: '19180939002'
+      merchantNo: '10000063'
+      name: API-test1
+      state: 1
+    total: 1
+  message: 成功
+2-1:
+  code: '00000'
+  message: 成功
+2-2:
+  code: '00000'
+  data:
+    list:
+    - id: 83
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 18:33:39'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 56
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 57
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 58
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 53
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 54
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 55
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 47
+      notifyType: 3
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 0
+      title: 这是一个API精准商户文本运营规则通知
+      totalNum: 1
+    - id: 48
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 1
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 45
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:19'
+      readNum: 1
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    total: 14
+  message: 成功
+2-3:
+  code: '00000'
+  data:
+    list:
+    - id: 83
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 18:33:39'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 56
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 53
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 45
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:19'
+      readNum: 1
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    total: 4
+  message: 成功
+2-4:
+  code: '00000'
+  data:
+    content: 这是一个API文本内容
+    contentType: 1
+    id: 83
+    merchantList: []
+    notifyType: 1
+    operator: 测试专用角色-乐迪测试机
+    pushRange: 1
+    pushTime: '2022-07-20 18:33:39'
+    readNum: 0
+    regionList: []
+    title: 这是一个API全部商户文本系统通知
+    totalNum: 7
+  message: 成功
+2-5:
+  code: '00000'
+  message: 成功
+2-6:
+  code: '00000'
+  message: 成功
+2-7:
+  code: '00000'
+  data:
+    list:
+    - id: 84
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 18:33:39'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 56
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 57
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 58
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 53
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 54
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 55
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 47
+      notifyType: 3
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 0
+      title: 这是一个API精准商户文本运营规则通知
+      totalNum: 1
+    - id: 48
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 1
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 45
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:19'
+      readNum: 1
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    total: 14
+  message: 成功
+2-8:
+  code: '00000'
+  data:
+    list:
+    - id: 84
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 18:33:39'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 57
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 54
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 46
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:19'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    total: 4
+  message: 成功
+2-9:
+  code: '00000'
+  data:
+    contentType: 2
+    id: 84
+    imgOssUrl: https://test.static.ledear.cn/merchant/merchant_notify/img/0bc1b567-09cf-455a-81a9-0f4381d65d88.jpg?Expires=1658316819&OSSAccessKeyId=LTAI5tLC3xKWsnzq9jz2fQsL&Signature=32vy%2BUSeqi3fKB3afcCC8h7Az7c%3D
+    imgUrl: merchant/merchant_notify/img/0bc1b567-09cf-455a-81a9-0f4381d65d88.jpg
+    merchantList: []
+    notifyType: 2
+    operator: 测试专用角色-乐迪测试机
+    pushRange: 2
+    pushTime: '2022-07-20 18:33:39'
+    readNum: 0
+    regionList:
+    - area: 武侯区
+      city: 成都市
+      province: 四川省
+    title: 这是一个API区域商户图片营销通知
+    totalNum: 3
+  message: 成功
+2-10:
+  code: '00000'
+  message: 成功
+2-11:
+  code: '00000'
+  message: 成功
+2-12:
+  code: '00000'
+  data:
+    list:
+    - id: 85
+      notifyType: 3
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 18:33:39'
+      readNum: 0
+      title: 这是一个API精准商户文本运营规则通知
+      totalNum: 1
+    - id: 56
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 57
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 58
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 53
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 54
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 55
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 47
+      notifyType: 3
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 0
+      title: 这是一个API精准商户文本运营规则通知
+      totalNum: 1
+    - id: 48
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 1
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 45
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:19'
+      readNum: 1
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    total: 14
+  message: 成功
+2-13:
+  code: '00000'
+  data:
+    list:
+    - id: 85
+      notifyType: 3
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 18:33:39'
+      readNum: 0
+      title: 这是一个API精准商户文本运营规则通知
+      totalNum: 1
+    - id: 47
+      notifyType: 3
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 0
+      title: 这是一个API精准商户文本运营规则通知
+      totalNum: 1
+    total: 2
+  message: 成功
+2-14:
+  code: '00000'
+  data:
+    content: '这是一个API文本内容
+
+      这
+
+      是一
+
+      个API
+
+      文本内容'
+    contentType: 1
+    id: 85
+    merchantList:
+    - 86
+    merchantName: API-test1
+    notifyType: 3
+    operator: 测试专用角色-乐迪测试机
+    pushRange: 3
+    pushTime: '2022-07-20 18:33:39'
+    readNum: 0
+    regionList: []
+    title: 这是一个API精准商户文本运营规则通知
+    totalNum: 1
+  message: 成功
+2-15:
+  code: '00000'
+  message: 成功
+2-16:
+  code: '00000'
+  message: 成功
+2-17:
+  code: '00000'
+  data:
+    list:
+    - id: 86
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 18:33:39'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 56
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 57
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 58
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 53
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    - id: 54
+      notifyType: 2
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片营销通知
+      totalNum: 3
+    - id: 55
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 47
+      notifyType: 3
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 0
+      title: 这是一个API精准商户文本运营规则通知
+      totalNum: 1
+    - id: 48
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 1
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 45
+      notifyType: 1
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:19'
+      readNum: 1
+      title: 这是一个API全部商户文本系统通知
+      totalNum: 7
+    total: 14
+  message: 成功
+2-18:
+  code: '00000'
+  data:
+    list:
+    - id: 86
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 18:33:39'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 58
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:32:06'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 55
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-20 15:17:58'
+      readNum: 0
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    - id: 48
+      notifyType: 4
+      operator: 测试专用角色-乐迪测试机
+      pushTime: '2022-07-19 18:30:20'
+      readNum: 1
+      title: 这是一个API区域商户图片其他通知
+      totalNum: 7
+    total: 4
+  message: 成功
+2-19:
+  code: '00000'
+  data:
+    contentType: 2
+    id: 86
+    imgOssUrl: https://test.static.ledear.cn/merchant/merchant_notify/img/894ee202-ac2a-4a8c-a541-962b54238956.jpg?Expires=1658316820&OSSAccessKeyId=LTAI5tLC3xKWsnzq9jz2fQsL&Signature=tEqg1GS6t7a2d1mSJo0u5NT9uBk%3D
+    imgUrl: merchant/merchant_notify/img/894ee202-ac2a-4a8c-a541-962b54238956.jpg
+    merchantList: []
+    notifyType: 4
+    operator: 测试专用角色-乐迪测试机
+    pushRange: 2
+    pushTime: '2022-07-20 18:33:39'
+    readNum: 0
+    regionList:
+    - province: 四川省
+    title: 这是一个API区域商户图片其他通知
+    totalNum: 7
+  message: 成功
+2-20:
+  code: '00000'
+  message: 成功
+3-1:
+  code: '00000'
+  message: 成功
+3-2:
+  code: '00000'
+  data:
+    list:
+    - defaultRent: 1
+      depositAmount: 200
+      description: 测试车型A1
+      id: 198
+      name: A1
+      picturePath: bike/bikeModel/img/8237dd18-24a0-4eb8-be9b-55d0444a3bdf.png
+      total: 6
+    - defaultRent: 2000
+      depositAmount: 2
+      description: 测试车型A2
+      id: 199
+      name: A2
+      picturePath: bike/bikeModel/img/866fab64-af69-49cb-abff-4c9b81cab3ff.png
+      total: 1
+    - defaultRent: 2500
+      depositAmount: 3
+      description: 测试车型A3
+      id: 200
+      name: A3
+      picturePath: bike/bikeModel/img/a15bce07-6bc7-4def-a9dd-ce4faa9c171d.png
+      total: 1
+    - defaultRent: 100
+      depositAmount: 100
+      description: '1'
+      id: 201
+      name: test
+      picturePath: bike/bikeModel/img/7ede3d9e-0609-473f-8a8f-9100ae3dd302.jpg
+      total: 2
+    - defaultRent: 999
+      depositAmount: 99900
+      description: 这是一个API测试车型，接口自动化专用
+      id: 220
+      name: API测试车型
+      picturePath: bike/bikeModel/img/a160dbd6-c8f3-4735-85c7-7b85b1a05d35.png
+      total: 0
+    total: 5
+  message: 成功
+3-3:
+  code: '00000'
+  message: 成功
+3-4:
+  code: '00000'
+  message: 成功
+3-5:
+  code: '00000'
+  message: 成功
+3-6:
+  code: '00000'
+  data:
+    list:
+    - defaultRent: 1
+      depositAmount: 200
+      description: 测试车型A1
+      id: 198
+      name: A1
+      picturePath: bike/bikeModel/img/8237dd18-24a0-4eb8-be9b-55d0444a3bdf.png
+      total: 6
+    - defaultRent: 2000
+      depositAmount: 2
+      description: 测试车型A2
+      id: 199
+      name: A2
+      picturePath: bike/bikeModel/img/866fab64-af69-49cb-abff-4c9b81cab3ff.png
+      total: 1
+    - defaultRent: 2500
+      depositAmount: 3
+      description: 测试车型A3
+      id: 200
+      name: A3
+      picturePath: bike/bikeModel/img/a15bce07-6bc7-4def-a9dd-ce4faa9c171d.png
+      total: 1
+    - defaultRent: 100
+      depositAmount: 100
+      description: '1'
+      id: 201
+      name: test
+      picturePath: bike/bikeModel/img/7ede3d9e-0609-473f-8a8f-9100ae3dd302.jpg
+      total: 2
+    - defaultRent: 999
+      depositAmount: 99900
+      description: 这是一个API测试车型，接口自动化专用
+      id: 221
+      name: API测试车型
+      picturePath: bike/bikeModel/img/a160dbd6-c8f3-4735-85c7-7b85b1a05d35.png
+      total: 0
+    total: 5
+  message: 成功
+4-1:
+  code: '00000'
+  data:
+  - '30000004'
+  - '30000005'
+  - '30000006'
+  - '30000007'
+  - '30000008'
+  - '30000009'
+  - '30000011'
+  - '30000012'
+  - '30000013'
+  - '30000014'
+  - '30000015'
+  - '30000016'
+  - '30000017'
+  - '30000018'
+  - '30000019'
+  - '30000020'
+  - '30000021'
+  - '30000022'
+  - '30000023'
+  - '30000024'
+  - '30000025'
+  - '30000026'
+  - '30000027'
+  - '30000028'
+  - '30000029'
+  - '30000030'
+  - '30000031'
+  - '30000032'
+  - '30000033'
+  - '30000034'
+  - '30000035'
+  - '30000036'
+  - '30000037'
+  - '30000038'
+  - '30000039'
+  - '30000040'
+  - '30000041'
+  - '30000042'
+  - '30000043'
+  - '30000044'
+  - '30000045'
+  - '30000046'
+  - '30000047'
+  - '30000048'
+  - '30000049'
+  - '30000050'
+  message: 成功
+4-2:
+  code: '00000'
+  data:
+  - id: 198
+    name: A1
+  - id: 199
+    name: A2
+  - id: 200
+    name: A3
+  - id: 221
+    name: API测试车型
+  - id: 201
+    name: test
+  message: 成功
+4-2-1:
+  code: '00000'
+  data:
+  - id: 161
+    name: 测试方案
+  - id: 1
+    name: 默认方案
+  message: 成功
+4-3:
+  code: '00006'
+  message: must not be null
+4-4:
+  code: '00000'
+  data:
+    list: []
+    total: 0
+  message: 成功

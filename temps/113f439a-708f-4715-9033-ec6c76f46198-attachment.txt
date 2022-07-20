@@ -1,0 +1,1 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:148 接口不执行：4-16车辆列表详情车辆控制-打开轮锁（暂不调试）

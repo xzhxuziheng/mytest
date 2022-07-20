@@ -5,20 +5,7 @@ class CommonUtil:
 
     data = yaml_util.read_yaml('/baseconfig.yaml')
     base_url = data['base_url']
-    header = data['header']
-    login_header = data['login_header']
-
-    # def setup_class(self):
-    #     print('每个类之前执行一次')
-    #
-    #
-    # def teardown_class(self):
-    #     print('每个类之后执行一次')
-    #
-    #
-    # def setup(self):
-    #     print('每个用例之前执行一次')
-    #
-    #
-    # def teardown(self):
-    #     print('每个用例之后执行一次')
+    header_admin = data['header']['admin']
+    login_header_admin = data['login_header']['admin']
+    header_factory_wx_mini = data['header']['factory_wx_mini']
+    login_header_factory_wx_mini = data['login_header']['factory_wx_mini']

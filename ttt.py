@@ -15,12 +15,12 @@ msg = [{'code': '00000', 'message': '成功', 'data': {'total': 339, 'list': [
              'mileage': 0.0, 'payableMoney': 11, 'paidTotalMoney': 0, 'state': 2,
              'startTime': '2022-05-13 16:36:27', 'endTime': '2022-05-13 16:36:32', 'groupId': 7}]}}]
 
-readYaml = yaml_util.read_yaml('/web_testcase/case/all_api.yaml')
+readYaml = yaml_util.read_yaml('all_testcase/case/all_api.yaml')
 depends_key = readYaml[1]['depends_value']
 print(depends_key)
 for get_key in depends_key:
     list_key = get_key.split('.')
-    get_value = yaml_util.read_yaml('web_testcase/case/response.yaml')
+    get_value = yaml_util.read_yaml('all_testcase/case/response.yaml')
     for str_key in list_key:
         try:
             get_value = get_value[str_key]

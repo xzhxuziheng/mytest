@@ -1,0 +1,2 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:73 测试接口：0-1-17厂测小程序获取车辆绑定中控网络撤防
+ERROR    C:\xzh\project\mytest\common\assert_util.py:assert_util.py:27 成功 不包含于 车辆不在线

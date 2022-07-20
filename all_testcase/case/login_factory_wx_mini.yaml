@@ -1,0 +1,16 @@
+#-
+#  name: 乐迪出行登录
+#  url: /api/account/platform/account/login
+#  method: get
+#  data:
+#    phone: 18408229871
+#    code: 930619
+#  asserts: '成功'
+-
+  name: 长租厂测微信小程序登录
+  url: /rent-api/factory/factory-user/account/login
+  method: get
+  data:
+    phone: 19180930619
+    code: 930619
+  asserts: 成功

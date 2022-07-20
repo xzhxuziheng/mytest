@@ -2,19 +2,19 @@
     "reportName": "自动化测试报告",
     "testRuns": [],
     "statistic": {
-        "failed": 0,
-        "broken": 0,
+        "failed": 13,
+        "broken": 5,
         "skipped": 0,
-        "passed": 54,
+        "passed": 59,
         "unknown": 0,
-        "total": 54
+        "total": 77
     },
     "time": {
-        "start": 1655456027288,
-        "stop": 1655456033204,
-        "duration": 5916,
+        "start": 1658313217707,
+        "stop": 1658313221596,
+        "duration": 3889,
         "minDuration": 0,
-        "maxDuration": 525,
-        "sumDuration": 5670
+        "maxDuration": 468,
+        "sumDuration": 3422
     }
 }

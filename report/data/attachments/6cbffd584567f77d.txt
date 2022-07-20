@@ -1,7 +1,0 @@
-INFO     web_testcase.api.test_all_api:test_all_api.py:36 测试接口：3-3车型管理编辑车型
-INFO     web_testcase.api.test_all_api:test_all_api.py:75 我是depends_data：{'id': 514}
-INFO     web_testcase.api.test_all_api:test_all_api.py:76 我是depends_data类型：<class 'dict'>
-INFO     web_testcase.api.test_all_api:test_all_api.py:93 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoxOX0.AAKczZ4cm7kaJ_pf6iDgWLd4t5YfzbqJctFLVqlrmWw', 'Content-Length': '362'}
-INFO     web_testcase.api.test_all_api:test_all_api.py:94 请求路径：https://test.rent.ledear.cn/rent-api/bike/platform/bike-model?id=514
-INFO     web_testcase.api.test_all_api:test_all_api.py:97 请求参数：{"name": "API测试车型编辑", "description": "这是一个API测试车型，接口自动化专用，编辑后的车型介绍", "deposit": 1, "defaultRent": 1000, "depositAmount": 1000000, "picturePath": "bike/bikeModel/img/c074bf51-ca14-4a15-8e5a-99bc12e537d1.png"}
-INFO     web_testcase.api.test_all_api:test_all_api.py:100 响应结果：{'code': '00000', 'message': '成功'}

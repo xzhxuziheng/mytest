@@ -1,0 +1,11 @@
+delete:
+  - delete from merchant where name = 'API-test1'
+  - delete from merchant_biz_change_record where member_no = 'ld32207191809184216'
+  - delete from bike where bike_no = '90100001'
+  - delete from bike_model where name = 'API测试车型'
+  - delete from factory_number_segment where number_prefix = '901'
+  - delete from factory_bike where bike_no = '90100001'
+  - delete from factory_terminal where terminal_no='90112345'
+insert:
+  - insert into factory_number_segment set number_prefix='901', create_time='2022-07-06 14:27:30'
+  - insert into factory_terminal set terminal_no='90112345', terminal_type=2, create_time='2022-07-06 14:27:30'

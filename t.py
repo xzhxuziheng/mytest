@@ -7,7 +7,7 @@ def get_yaml_depends_data(yaml_file_path, data):
 
 
 def get_yaml_depends_value(data):
-    depends_value = get_yaml_depends_data('/web_testcase/case/all_api.yaml', 'depends_value')
+    depends_value = get_yaml_depends_data('all_testcase/case/all_api.yaml', 'depends_value')
     get_depends_value = []
     for dv in depends_value:
         dv = dv.split('.')
@@ -23,6 +23,6 @@ def get_yaml_depends_value(data):
 
 
 def get_depends_key_value(data):
-    depends_key = get_yaml_depends_data('/web_testcase/case/all_api.yaml', 'depends_key')
+    depends_key = get_yaml_depends_data('all_testcase/case/all_api.yaml', 'depends_key')
     depends_value = get_yaml_depends_value(data)
     return dict(zip(depends_key, depends_value))
