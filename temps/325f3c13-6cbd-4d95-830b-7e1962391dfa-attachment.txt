@@ -1,0 +1,7 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：7-5-2平台端获取用户信息详情
+INFO     all_testcase.api.test_all_api:test_all_api.py:100 我是depends_data：{'id': 10000124}
+INFO     all_testcase.api.test_all_api:test_all_api.py:101 我是depends_data类型：<class 'dict'>
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.galAdUWD-8PW4rr_tlTd4JeRpeLqdxdOdqHEMTQDpzA'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/user/platform/user/detail?id=10000124
+INFO     all_testcase.api.test_all_api:test_all_api.py:148 请求参数：None
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功', 'data': {'id': 10000124, 'phone': '19180930619', 'enable': True, 'nameAuth': True, 'orderCount': 2, 'createTime': '2022-07-28 11:51:04', 'nickName': '乐迪用户-000001', 'name': '明绅', 'idCard': '360702200510241955', 'authTime': '2022-08-01 09:55:01', 'creditQueryOrg': 0, 'creditQueryResult': 0, 'refundOrderNum': 0}}

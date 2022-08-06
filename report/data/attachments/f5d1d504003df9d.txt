@@ -1,0 +1,7 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：1-9商户详情修改营业位置
+INFO     all_testcase.api.test_all_api:test_all_api.py:120 我是depends_data：{'id': 95}
+INFO     all_testcase.api.test_all_api:test_all_api.py:121 我是depends_data类型：<class 'dict'>
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.galAdUWD-8PW4rr_tlTd4JeRpeLqdxdOdqHEMTQDpzA', 'Content-Length': '358'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/merchant/platform/merchant/region-info?id=95
+INFO     all_testcase.api.test_all_api:test_all_api.py:146 请求参数：{"address": "四川省成都市武侯区石羊街道剑南大道中段成都高新技术产业开发区(南区)", "area": "武侯区", "city": "成都市", "position": {"lon": "104.046356", "lat": "30.549605"}, "province": "四川省"}
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功'}

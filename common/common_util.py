@@ -9,3 +9,5 @@ class CommonUtil:
     login_header_admin = data['login_header']['admin']
     header_factory_wx_mini = data['header']['factory_wx_mini']
     login_header_factory_wx_mini = data['login_header']['factory_wx_mini']
+    header_user_wx_mini = data['header']['user_wx_mini']
+    login_header_user_wx_mini = data['login_header']['user_wx_mini']

@@ -1,0 +1,1 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:151 接口不执行：0-1-13厂测小程序获取车辆绑定中控网络开电池锁

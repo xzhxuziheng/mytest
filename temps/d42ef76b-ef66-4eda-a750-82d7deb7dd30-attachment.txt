@@ -1,0 +1,7 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：7-7用户下单
+INFO     all_testcase.api.test_all_api:test_all_api.py:100 我是depends_data：{'bikePrice': 1.0, 'modelName': '000API测试车型', 'modelId': '241', 'merchantNo': '10000224', 'merchantName': 'API-test商户', 'merchantId': 95, 'deposit': 1}
+INFO     all_testcase.api.test_all_api:test_all_api.py:101 我是depends_data类型：<class 'dict'>
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '7', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Nywic291cmNlX2lkIjoxMDAwMDEyNH0.m2xyJOsAsWdmtmAad__vS2qtjUiICMV5U2XkqMiWS9g', 'Content-Length': '301'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/order/user/order/confirm
+INFO     all_testcase.api.test_all_api:test_all_api.py:146 请求参数：{"subscribePickupTime": "2022-07-28 14:00:00", "subscribeReturnTime": "2022-07-29 14:00:00", "tenancy": 1, "payType": 3, "bikePrice": 1.0, "modelName": "000API测试车型", "modelId": "241", "merchantNo": "10000224", "merchantName": "API-test商户", "merchantId": 95, "deposit": 1}
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功', 'data': 274}

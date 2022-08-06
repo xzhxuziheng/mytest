@@ -1,5 +1,0 @@
-INFO     all_testcase.api.test_all_api:test_all_api.py:73 测试接口：3-5车型管理再次新增车型
-INFO     all_testcase.api.test_all_api:test_all_api.py:139 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoyOH0.iFpqXL8pRupMEp2vdWDOBWCzJ8TncBIeiXmQlhaogek', 'Content-Length': '293'}
-INFO     all_testcase.api.test_all_api:test_all_api.py:140 请求路径：https://dev.rent.ledear.cn:28000/rent-api/bike/platform/bike-model
-INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求参数：{"name": "API测试车型", "description": "这是一个API测试车型，接口自动化专用", "deposit": 0, "defaultRent": 999, "depositAmount": 99900, "picturePath": "bike/bikeModel/img/a160dbd6-c8f3-4735-85c7-7b85b1a05d35.png"}
-INFO     all_testcase.api.test_all_api:test_all_api.py:146 响应结果：{'code': '00000', 'message': '成功'}

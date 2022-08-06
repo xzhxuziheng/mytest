@@ -25,13 +25,13 @@ def get_redis_data(redis_key):
 
 
 if __name__ == '__main__':
-    redisKey = 'user:cache:login:1525_1'
+    redisKey = 'user:cache:login:10000124_7'
     print(get_redis_data(redisKey))
-    header = {
-        'token': get_redis_data(redisKey),
-        'source_type': '1',
-        'content-type': 'application/json'
-    }
-    url = 'https://test.bike.ledear.cn/api/order/user/ride/list?page=1'
-    res = requests.get(url=url, headers=header)
-    print(res.json())
+    # header = {
+    #     'token': get_redis_data(redisKey),
+    #     'source_type': '1',
+    #     'content-type': 'application/json'
+    # }
+    # url = 'https://test.bike.ledear.cn/api/order/user/ride/list?page=1'
+    # res = requests.get(url=url, headers=header)
+    # print(res.json())

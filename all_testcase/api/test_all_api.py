@@ -66,9 +66,12 @@ class TestAllApi:
                 token = {'token': yaml_util.read_yaml('/all_testcase/case/dependCase.yaml')['token_factory_wx_mini']}
             # 用户端微信小程序token
             elif token_source == 'user_wx_mini':
+                header = CommonUtil.header_user_wx_mini
                 token = {'token': yaml_util.read_yaml('/all_testcase/case/dependCase.yaml')['token_user_wx_mini']}
             header.update(token)
             data = caseinfo['data']
+            if data is None:
+                data = {}
             asserts = caseinfo['asserts']
             logger.info('测试接口：'+num+'%s' % name)
             res = ''

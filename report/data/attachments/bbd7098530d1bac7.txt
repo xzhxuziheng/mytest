@@ -1,0 +1,3 @@
+INFO     all_testcase.api.test_login_admin:test_login_admin.py:26 测试接口：乐迪长租登录
+INFO     all_testcase.api.test_login_admin:test_login_admin.py:34 https://test.rent.ledear.cn/rent-api/account/platform/account/login
+INFO     all_testcase.api.test_login_admin:test_login_admin.py:35 {'code': '00000', 'message': '成功', 'data': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.galAdUWD-8PW4rr_tlTd4JeRpeLqdxdOdqHEMTQDpzA'}

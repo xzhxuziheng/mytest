@@ -17,13 +17,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\web_testcase\case\csv_data\orderPlatformRideList.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

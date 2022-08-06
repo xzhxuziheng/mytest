@@ -1,0 +1,11 @@
+#-
+#  name: 乐迪出行登录
+#  url: /api/account/platform/account/login
+#  method: get
+#  data:
+#    phone: 18408229871
+#    code: 930619
+#  asserts: '成功'
+-
+  name: 长租用户端微信小程序登录
+  user_key: 'user:cache:login:10000124_7'

@@ -1,0 +1,5 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：1-10商户列表再次获取数据
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.galAdUWD-8PW4rr_tlTd4JeRpeLqdxdOdqHEMTQDpzA'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/merchant/platform/merchant/list?page=1&pageSize=10
+INFO     all_testcase.api.test_all_api:test_all_api.py:148 请求参数：None
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功', 'data': {'total': 2, 'list': [{'id': 95, 'merchantNo': '10000224', 'name': 'API-test商户', 'linkPhone': '19180930619', 'bikeNum': 0, 'state': 1}, {'id': 88, 'merchantNo': '10000216', 'name': '通联商户', 'linkPhone': '19180930001', 'bikeNum': 1, 'state': 1}]}}

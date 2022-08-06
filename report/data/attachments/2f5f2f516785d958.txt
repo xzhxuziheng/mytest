@@ -1,0 +1,7 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：7-8用户支付
+INFO     all_testcase.api.test_all_api:test_all_api.py:100 我是depends_data：{'orderId': 274}
+INFO     all_testcase.api.test_all_api:test_all_api.py:101 我是depends_data类型：<class 'dict'>
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '7', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Nywic291cmNlX2lkIjoxMDAwMDEyNH0.m2xyJOsAsWdmtmAad__vS2qtjUiICMV5U2XkqMiWS9g', 'Content-Length': '30'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/order/user/order/unified-order-rent
+INFO     all_testcase.api.test_all_api:test_all_api.py:146 请求参数：{"payType": 3, "orderId": 274}
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功', 'data': {'payType': 3, 'wechatMiniProgramPayInfo': {'timeStamp': '1659325525', 'nonceStr': 'b50039a8fe964ac98445d3402136b612', 'packages': 'prepay_id=wx01114525850739bf9ce8dbed139fd20000', 'signType': 'RSA', 'paySign': 'EXdDMb9B9YCaW1KH4GpHJ5UnqVTGIcQAUBOlbyFqL+Et1/jDEH0PRJhyfW6HSGM4U/iwuSUHcd9p/FX87uInNAfX848l9qi+qVp2IVwD/9A6hY7VdJ1RCB6IByI4aGZXrL64ForVSAUPL0pr1vRWmlY2MqLh4WntAJ2DkiTonNPkT0viG5vI5fpEjoq44dLVMY7t3AdmypnT/tse0rmPBNwu8aviE6/XYERVmsyvbMd36tq/cufA3XJXF4oOdJ+9OBIFE2SvPo6HYHvaM4Jdmjdt/nEPQksllA2s+TpFmbyTYFC40wfxhA4w2zFlmCroh7hBMX5s2ZngU8PKL2jmOw=='}}}

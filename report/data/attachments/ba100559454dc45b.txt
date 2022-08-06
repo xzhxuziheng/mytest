@@ -1,2 +1,0 @@
-INFO     all_testcase.api.test_all_api:test_all_api.py:73 测试接口：0-1-13厂测小程序获取车辆绑定中控网络开电池锁
-ERROR    C:\xzh\project\mytest\common\assert_util.py:assert_util.py:27 成功 不包含于 车辆不在线

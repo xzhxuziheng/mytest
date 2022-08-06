@@ -1,8 +1,9 @@
 delete:
-  - delete from merchant where name = 'API-test1'
-  - delete from merchant_biz_change_record where member_no = 'ld32207191809184216'
+  - delete from merchant where name like '%API%'
+  - delete from merchant_biz_change_record where member_no = 'ld32207281635276540'
+  - delete from merchant_notify where title like '%API%'
   - delete from bike where bike_no = '90100001'
-  - delete from bike_model where name = 'API测试车型'
+  - delete from bike_model where name like '%API%'
   - delete from factory_number_segment where number_prefix = '901'
   - delete from factory_bike where bike_no = '90100001'
   - delete from factory_terminal where terminal_no='90112345'

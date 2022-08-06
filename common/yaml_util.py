@@ -61,9 +61,9 @@ def read_new_yaml(yaml_file_path, new_yaml_file_path, csv_path):
 
 
 if __name__ == '__main__':
-    yaml_file_path = '/all_testcase/case/dependCase.yaml'
+    yaml_file_path = '/all_testcase/case/mytest.yaml'
     print(read_yaml(yaml_file_path))
-    print(read_yaml(yaml_file_path)['token_factory_wx_mini'])
+    # print(read_yaml(yaml_file_path)['token_factory_wx_mini'])
     # class Testapi:
     #     @pytest.mark.parametrize('caseinfo', read_yaml(yaml_file_path))
     #     def test_api(self, caseinfo):

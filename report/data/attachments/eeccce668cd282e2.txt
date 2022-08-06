@@ -1,0 +1,7 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：0-3-4电池方案列表详情
+INFO     all_testcase.api.test_all_api:test_all_api.py:100 我是depends_data：{'batteryPlanId': 176}
+INFO     all_testcase.api.test_all_api:test_all_api.py:101 我是depends_data类型：<class 'dict'>
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.galAdUWD-8PW4rr_tlTd4JeRpeLqdxdOdqHEMTQDpzA'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/bike/platform/battery-plan/list-item?batteryPlanId=176
+INFO     all_testcase.api.test_all_api:test_all_api.py:148 请求参数：None
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功', 'data': [{'id': 1044, 'minVoltage': 40000, 'maxVoltage': 45000, 'batteryPercent': 10, 'remainMileage': 5}, {'id': 1045, 'minVoltage': 45000, 'maxVoltage': 50000, 'batteryPercent': 30, 'remainMileage': 10}, {'id': 1046, 'minVoltage': 50000, 'maxVoltage': 55000, 'batteryPercent': 40, 'remainMileage': 20}, {'id': 1047, 'minVoltage': 55000, 'maxVoltage': 60000, 'batteryPercent': 60, 'remainMileage': 40}, {'id': 1048, 'minVoltage': 60000, 'maxVoltage': 65000, 'batteryPercent': 80, 'remainMileage': 60}, {'id': 1049, 'minVoltage': 65000, 'maxVoltage': 70000, 'batteryPercent': 100, 'remainMileage': 80}]}

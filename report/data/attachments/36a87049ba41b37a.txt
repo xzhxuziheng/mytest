@@ -1,7 +1,0 @@
-INFO     all_testcase.api.test_all_api:test_all_api.py:73 测试接口：1-7商户详情修改经营信息
-INFO     all_testcase.api.test_all_api:test_all_api.py:117 我是depends_data：{'id': 86}
-INFO     all_testcase.api.test_all_api:test_all_api.py:118 我是depends_data类型：<class 'dict'>
-INFO     all_testcase.api.test_all_api:test_all_api.py:139 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjoyOH0.iFpqXL8pRupMEp2vdWDOBWCzJ8TncBIeiXmQlhaogek', 'Content-Length': '237'}
-INFO     all_testcase.api.test_all_api:test_all_api.py:140 请求路径：https://dev.rent.ledear.cn:28000/rent-api/merchant/platform/merchant/base-info?id=86
-INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求参数：{"name": "API-test1", "linkMan": "API1", "linkPhone": 19180939002, "operateCycle": 1, "deposit": 1000001, "imgUrl": "merchant/merchant/img/1b455211-c5e5-4ba0-b3c4-8336bd754ee8.jpg", "operateStartTime": "09:30", "operateEndTime": "22:30"}
-INFO     all_testcase.api.test_all_api:test_all_api.py:146 响应结果：{'code': '00000', 'message': '成功'}

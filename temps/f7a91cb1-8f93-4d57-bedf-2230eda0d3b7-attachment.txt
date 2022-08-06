@@ -1,0 +1,5 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：0-3-3电池方案列表查询
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.galAdUWD-8PW4rr_tlTd4JeRpeLqdxdOdqHEMTQDpzA'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/bike/platform/battery-plan/list?page=1&pageSize=10&name=API%E7%94%B5%E6%B1%A0%E6%96%B9%E6%A1%88
+INFO     all_testcase.api.test_all_api:test_all_api.py:148 请求参数：None
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功', 'data': {'total': 1, 'list': [{'id': 176, 'name': 'API电池方案', 'createTime': '2022-08-01 11:45:21', 'remark': 'API新增的电池方案', 'canUpdateDelete': True}]}}

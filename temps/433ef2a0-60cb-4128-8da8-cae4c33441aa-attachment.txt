@@ -1,1 +1,0 @@
-INFO     all_testcase.api.test_all_api:test_all_api.py:148 接口不执行：4-10车辆列表详情编辑车辆（前端数据回显有bug，暂不调试）

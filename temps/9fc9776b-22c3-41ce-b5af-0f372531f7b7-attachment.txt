@@ -1,0 +1,5 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：0-1-19厂测小程序解绑中控
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '4', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6NCwic291cmNlX2lkIjo0MX0.nNitacP42ZGpL8RTKlg0BIXmzyW5Lylpg8HlfO-IAjE', 'Content-Length': '101'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/factory/factory-user/bike/unbind
+INFO     all_testcase.api.test_all_api:test_all_api.py:146 请求参数：{"bikeNo": "90100001", "reason": "中控损坏", "remark": "API解绑中控"}
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功'}

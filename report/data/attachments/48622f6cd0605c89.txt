@@ -1,0 +1,5 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：7-5获取用户id
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '7', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Nywic291cmNlX2lkIjoxMDAwMDEyNH0.m2xyJOsAsWdmtmAad__vS2qtjUiICMV5U2XkqMiWS9g'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/user/name-auth-info
+INFO     all_testcase.api.test_all_api:test_all_api.py:148 请求参数：None
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功', 'data': {'id': 10000124, 'name': '明绅', 'idCard': '360702200510241955'}}

@@ -1,0 +1,7 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：0-1-2厂测列表生成编号
+INFO     all_testcase.api.test_all_api:test_all_api.py:100 我是depends_data：{'numberSegmentId': 730}
+INFO     all_testcase.api.test_all_api:test_all_api.py:101 我是depends_data类型：<class 'dict'>
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '3', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Mywic291cmNlX2lkIjo0MX0.galAdUWD-8PW4rr_tlTd4JeRpeLqdxdOdqHEMTQDpzA', 'Content-Length': '103'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/factory/factory-platform/number-segment/generate
+INFO     all_testcase.api.test_all_api:test_all_api.py:146 请求参数：{"generateCount": "1", "qrCodeRule": "https://www.ledear.com?bikeNo=${bikeNo}", "numberSegmentId": 730}
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功', 'data': 'https://test.static.ledear.cn/factory/qrCode/%E4%B9%90%E8%BF%AA%E9%95%BF%E7%A7%9F%E8%BD%A6%E8%BE%86%E7%BC%96%E5%8F%B720220801114516905234.xlsx?Expires=1659329116&OSSAccessKeyId=LTAI5tLC3xKWsnzq9jz2fQsL&Signature=c6j9bS6NMPaDweccyn%2FgDtPmCKA%3D'}

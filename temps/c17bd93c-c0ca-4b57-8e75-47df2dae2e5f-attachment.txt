@@ -1,4 +1,0 @@
-INFO     all_testcase.api.test_all_api:test_all_api.py:73 测试接口：4-3车辆列表新增车辆
-INFO     all_testcase.api.test_all_api:test_all_api.py:97 我是depends_data：{'bikeNo': '30000004', 'modelId': 198, 'merchantNo': '10000063', 'modelName': 'A1', 'merchantId': 86, 'merchantName': 'API-test1'}
-INFO     all_testcase.api.test_all_api:test_all_api.py:98 我是depends_data类型：<class 'dict'>
-ERROR    C:\xzh\project\mytest\common\assert_util.py:assert_util.py:27 成功 不包含于 must not be null

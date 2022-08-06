@@ -1,0 +1,1 @@
+INFO     all_testcase.api.test_login_user_wx_mini:test_login_user_wx_mini.py:23 测试接口：长租用户端微信小程序登录

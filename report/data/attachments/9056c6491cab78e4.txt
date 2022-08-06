@@ -1,0 +1,5 @@
+INFO     all_testcase.api.test_all_api:test_all_api.py:76 测试接口：7-2获取附近商户信息
+INFO     all_testcase.api.test_all_api:test_all_api.py:142 请求头：{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'source_type': '7', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb3VyY2VfdHlwZSI6Nywic291cmNlX2lkIjoxMDAwMDEyNH0.m2xyJOsAsWdmtmAad__vS2qtjUiICMV5U2XkqMiWS9g'}
+INFO     all_testcase.api.test_all_api:test_all_api.py:143 请求路径：https://test.rent.ledear.cn/rent-api/merchant/user/merchant/nearest-merchant?lon=104.04467529296875&lat=30.557841796875
+INFO     all_testcase.api.test_all_api:test_all_api.py:148 请求参数：None
+INFO     all_testcase.api.test_all_api:test_all_api.py:149 响应结果：{'code': '00000', 'message': '成功', 'data': {'id': 95, 'name': 'API-test商户', 'distance': 929, 'merchantNo': '10000224', 'linkPhone': '19180930619'}}
